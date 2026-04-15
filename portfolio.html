@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Janie Ogeah</title>
+  <meta name="description" content="Portfolio of Janie Ogeah, marketing strategy, creative direction, and photography." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .clients-intro { max-width: 640px; margin-bottom: 4rem; }
+    .clients-intro p { font-size: 1.05rem; color: var(--text); opacity: 0.85; line-height: 1.75; }
+
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+    .client-cell {
+      background: var(--surface);
+      padding: 2.5rem 2rem;
+      display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+      min-height: 140px;
+      border-left: 2px solid transparent;
+      transition: all var(--transition);
+      position: relative;
+    }
+    .client-cell:hover { background: #1a1a1a; border-left-color: var(--accent); }
+    .client-cell .c-num {
+      position: absolute; top: 1rem; right: 1.25rem;
+      font-size: 0.65rem; letter-spacing: 0.2em; color: var(--text-muted);
+    }
+    .client-cell .c-name { font-size: 1rem; font-weight: bold; color: var(--text); line-height: 1.3; margin-bottom: 0.4rem; }
+    .client-cell .c-sector { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      position: relative; overflow: hidden; isolation: isolate;
+      min-height: 320px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      transition: all var(--transition);
+      background: var(--surface);
+    }
+    .project-card:hover { border-color: var(--accent-dim); transform: translateY(-3px); }
+    .project-card .pc-bg {
+      position: absolute; inset: 0; z-index: -2;
+      background-size: cover; background-position: center;
+      filter: grayscale(80%) contrast(1.1) brightness(0.35);
+      transition: filter var(--transition), transform 0.5s ease;
+    }
+    .project-card:hover .pc-bg { filter: grayscale(40%) contrast(1.05) brightness(0.42); transform: scale(1.04); }
+    .project-card::before {
+      content: ''; position: absolute; inset: 0; z-index: -1;
+      background: linear-gradient(180deg, transparent 20%, rgba(7,7,7,0.92) 100%);
+    }
+    .project-card .pc-client { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .project-card h3 { font-size: 1.2rem; font-weight: bold; color: var(--text); line-height: 1.3; margin-bottom: 0.5rem; }
+    .project-card p { font-size: 0.88rem; color: var(--text); opacity: 0.75; line-height: 1.6; }
+
+    @media (max-width: 900px) { .clients-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 500px) { .clients-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home">
+      <img src="images/atJanie_logo.svg" alt="JO – Janie Ogeah" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="about.html">Bio</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="film.html">Film</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <div class="page-banner">
+      <div class="banner-bg" style="background-image:url('images/photo-towers.jpg');"></div>
+      <p class="section-label">Portfolio</p>
+      <h1>The proof is<br/><em>in the pudding.</em></h1>
+    </div>
+
+    <!-- Clients Served -->
+    <section>
+      <p class="section-label">Clients served</p>
+      <h2 class="section-title">10+ years across B2B, B2C,<br/><em>and mission-driven sectors.</em></h2>
+      <div class="clients-intro">
+        <p>From startups to international institutions, I've developed and executed comprehensive strategies that connect, convert, and endure.</p>
+      </div>
+      <div class="clients-grid">
+        <div class="client-cell">
+          <span class="c-num">01</span>
+          <div class="c-name">GSE Technologies</div>
+          <div class="c-sector">Sustainable solutions · B2B</div>
+        </div>
+        <div class="client-cell">
+          <span class="c-num">02</span>
+          <div class="c-name">AFA Sports</div>
+          <div class="c-sector">Sports Apparel · B2C</div>
+        </div>
+        <div class="client-cell">
+          <span class="c-num">03</span>
+          <div class="c-name">Green Vision Summit &amp; Expo</div>
+          <div class="c-sector">Events · Sustainability</div>
+        </div>
+        <div class="client-cell">
+          <span class="c-num">04</span>
+          <div class="c-name">Institute of Tourism Studies</div>
+          <div class="c-sector">Education · Public Sector</div>
+        </div>
+        <div class="client-cell">
+          <span class="c-num">05</span>
+          <div class="c-name">FEELhub</div>
+          <div class="c-sector">Tech · B2C</div>
+        </div>
+        <div class="client-cell">
+          <span class="c-num">06</span>
+          <div class="c-name">Zenera Consulting</div>
+          <div class="c-sector">Digital Marketing & PR · B2B</div>
+        </div>
+        <div class="client-cell">
+          <span class="c-num">07</span>
+          <div class="c-name">ECO Village</div>
+          <div class="c-sector">Sustainability · Mission-driven</div>
+        </div>
+        <div class="client-cell">
+          <span class="c-num">08</span>
+          <div class="c-name">Loonytainment</div>
+          <div class="c-sector">Creative</div>
+        </div>
+        <div class="client-cell">
+          <span class="c-num">09</span>
+          <div class="c-name">Pure Aesthetics</div>
+          <div class="c-sector">Beauty · B2C</div>
+        </div>
+        <div class="client-cell">
+          <span class="c-num">10</span>
+          <div class="c-name">Delta Print &amp; Publishing</div>
+          <div class="c-sector">Print Media · Public Sector</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects -->
+    <section class="alt">
+      <p class="section-label">Selected projects</p>
+      <h2 class="section-title">Work that <em>moved the needle.</em></h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="pc-bg" style="background-image:url('images/GSE-kids.jpg');"></div>
+          <div class="pc-client">GSE Technologies</div>
+          <h3>Brand Strategy &amp; Digital Marketing</h3>
+          <p>Full brand overhaul and integrated digital marketing campaign resulting in measurable growth in awareness, website traffic, and social engagement.</p>
+        </div>
+        <div class="project-card">
+          <div class="pc-bg" style="background-image:url('images/GVSE-100.jpg');"></div>
+          <div class="pc-client">Green Vision Summit &amp; Expo</div>
+          <h3>Sustainability Communications</h3>
+          <p>Stakeholder engagement and sustainability comms across Europe, Asia, Africa and the Americas for a global events leader.</p>
+        </div>
+        <div class="project-card">
+          <div class="pc-bg" style="background-image:url('images/photo-arches.jpg');"></div>
+          <div class="pc-client">AFA Sports</div>
+          <h3>PR &amp; Content Strategy</h3>
+          <p>PR and copywriting strategy for an athleisure brand, building narrative authority in a competitive market.</p>
+        </div>
+        <div class="project-card">
+          <div class="pc-bg" style="background-image:url('images/photo-mountain.jpg');"></div>
+          <div class="pc-client">Institute of Tourism Studies</div>
+          <h3>Institutional Communications</h3>
+          <p>Creative strategy and institutional relationship management combining Marcomms expertise with MBA-level thinking.</p>
+        </div>
+        <div class="project-card">
+          <div class="pc-bg" style="background-image:url('images/photo-sun-trees.jpg');"></div>
+          <div class="pc-client">Pure Aesthetics</div>
+          <h3>Brand Identity &amp; Content</h3>
+          <p>Visual creative direction, full content bank for a beauty and wellness clinic covering brand footage, treatment procedures, consultations, product demo and client testimonials. .</p>
+        </div>
+        <div class="project-card">
+          <div class="pc-bg" style="background-image:url('images/photo-cave.jpg');"></div>
+          <div class="pc-client">Loonytainment</div>
+          <h3>Creative Direction &amp; Campaigns</h3>
+          <p>End-to-end creative direction for campaigns combining entertainment with brand purpose.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photography Gallery -->
+    <section>
+      <p class="section-label">Through the lens</p>
+      <h2 class="section-title">Photography</h2>
+      <div class="photo-grid">
+        <img src="images/photo-01.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-cave.jpg" alt="Sea caves" onclick="openLightbox(this)" />
+        <img src="images/photo-02.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-valletta.jpg" alt="Valletta harbour" onclick="openLightbox(this)" />
+        <img src="images/photo-04.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-arches.jpg" alt="Architecture" onclick="openLightbox(this)" />
+        <img src="images/photo-05.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-mountain.jpg" alt="Mountain view" onclick="openLightbox(this)" />
+        <img src="images/photo-06.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-lantern.jpg" alt="Night lantern" onclick="openLightbox(this)" />
+        <img src="images/photo-07.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-sun-trees.jpg" alt="Sun through trees" onclick="openLightbox(this)" />
+        <img src="images/photo-08.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-towers.jpg" alt="City skyline" onclick="openLightbox(this)" />
+        <img src="images/photo-09.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-10.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-11.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-12.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-13.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-14.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-15.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-16.jpg" alt="" onclick="openLightbox(this)" />
+        <img src="images/photo-carnival.jpg" alt="Malta carnival" onclick="openLightbox(this)" />
+      </div>
+    </section>
+
+    <div class="contact-strip">
+      <div class="cs-bg" style="background-image:url('images/texture-stone.jpg');"></div>
+      <h2>Ready whenever <em>you are.</em></h2>
+      <a class="email" href="mailto:janieogeah@gmail.com">janieogeah@gmail.com</a>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <img id="lightboxImg" src="" alt="" />
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Janie Ogeah · <a href="https://lucidumvisions.com" style="color:inherit">Lucidum Visions</a></p>
+    <ul class="footer-links">
+      <li><a href="about.html">Bio</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="film.html">Film</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function toggleNav() { document.getElementById('nav').classList.toggle('open'); }
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+    });
+    function openLightbox(img) {
+      document.getElementById('lightboxImg

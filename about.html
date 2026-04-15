@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio — Janie Ogeah</title>
+  <meta name="description" content="Janie Ogeah, narrative strategist, filmmaker, and marketing communications professional with 10+ years of experience." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home">
+      <img src="images/atJanie_logo.svg" alt="JO – Janie Ogeah" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="about.html" class="active">Bio</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="film.html">Film</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <!-- Cinematic banner -->
+    <div class="page-banner">
+      <div class="banner-bg" style="background-image:url('images/photo-mountain.jpg');"></div>
+      <p class="section-label">About</p>
+      <h1>Janie<br/><em>Ogeah</em></h1>
+    </div>
+
+    <section style="padding:6rem 5% 7rem;">
+      <div class="bio-grid">
+        <div class="bio-image-wrap">
+          <div class="image-frame">
+            <!-- Profile photo: save your portrait as janie-portrait.jpg in the images folder -->
+            <img src="images/Janie_portrait.png"
+              onerror="this.style.cssText='aspect-ratio:4/5;width:100%;background:linear-gradient(160deg,#111,#1e1e1e);display:block;border:1px solid #2a2a2a;'"
+              alt="Janie Ogeah"
+              style="aspect-ratio:4/5;object-fit:cover;object-position:center top;width:100%;" />
+          </div>
+        </div>
+
+        <div class="bio-text">
+          <p class="lead">Curious aren't ya? Well, let's fix that, shall we?</p>
+
+          <p>I am Janie Ogeah, a narrative and creative strategist drawn to lies that tell the truth faster than facts ever will.</p>
+
+          <p><em style="color:var(--accent);font-style:italic;">Black Feeling</em> (2025) is my official debut to narrative film. I previously followed a passion for writing and producing TV and Radio programmes in Nigeria. With my relocation to Malta and the local independent film community as a huge motivator, I began my transition from commercial productions to narrative shorts, and have so far written four shorts, directed two, and produced three.</p>
+
+          <p>I admire the works of Steven Knight and Tim Burton.</p>
+
+          <p>I also wear a more corporate hat as a marketing and communication professional with 10+ years of experience in both the public and private sectors. I studied Mass Communication as an undergraduate, after which I proceeded to work with a Nigerian print media as a journalist and sub-editor.</p>
+
+          <p>I left the public sector for a few years and joined a digital marketing and PR agency, handling PR and copywriting projects for clients in the oil and gas, sports apparel, and fintech industries. Thereafter, I joined a global leader in events and exhibitions where I drove its sustainability communications and stakeholder engagements across Europe, Asia, Africa and the Americas.</p>
+
+          <p>The past year saw me return to the public sector, where I now combine my Marcomms experience with MBA expertise to conceive and execute creative strategies that manage and sustain institutional relationships.</p>
+
+          <div class="divider"></div>
+
+          <div class="credentials">
+            <div class="credential-group">
+              <h4>Core Competencies</h4>
+              <ul>
+                <li>Creative Leadership</li>
+                <li>Strategic Brand Management</li>
+                <li>Digital &amp; Traditional Marketing</li>
+                <li>Project Coordination</li>
+                <li>Cross-functional Team Management</li>
+                <li>Campaign Strategy</li>
+                <li>Data-driven Storytelling</li>
+              </ul>
+            </div>
+            <div class="credential-group">
+              <h4>Film Credits</h4>
+              <ul>
+                <li>Human in the Machine (2024) — Writer, Director, Producer</li>
+                <li>Black Feeling (2025) — Writer, Director, Producer</li>
+                <li>Who Killed Laughter (2025) - Writer</li>
+                <li>Off The Face (2026) — Co-writer, Co-Producer, Actor, Creator</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cinematic quote band -->
+    <div class="quote-band">
+      <div class="band-bg" style="background-image:url('images/photo-valletta.jpg');"></div>
+      <p>Lies that tell the truth <em>faster than facts ever will.</em></p>
+    </div>
+
+    <div class="contact-strip">
+      <div class="cs-bg" style="background-image:url('images/texture-stone.jpg');"></div>
+      <h2>Ready whenever <em>you are.</em></h2>
+      <a class="email" href="mailto:janieogeah@gmail.com">janieogeah@gmail.com</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Janie Ogeah · <a href="https://lucidumvisions.com" style="color:inherit">Lucidum Visions</a></p>
+    <ul class="footer-links">
+      <li><a href="about.html">Bio</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="film.html">Film</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function toggleNav() { document.getElementById('nav').classList.toggle('open'); }
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('c

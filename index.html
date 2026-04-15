@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janie Ogeah, Narrative &amp; Creative Strategist</title>
+  <meta name="description" content="Janie Ogeah, narrative and creative strategist. Immersive purposeful stories across print, digital and film." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home">
+      <img src="images/atJanie_logo.svg" alt="JO – Janie Ogeah" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="about.html">Bio</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="film.html">Film</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <section class="hero-cinema">
+      <div class="hero-bg" style="background-image:url('images/photo-arches.jpg');"></div>
+      <p class="hero-tag">Narrative &amp; Creative Strategist, Filmmaker</p>
+      <h1 class="hero-title">
+        Through immersive purposeful stories<br/>
+        across <em>print, digital</em> and <em>film.</em>
+      </h1>
+      <p class="hero-subtitle">Putting the human where it matters, in strategy, in story, in every frame.</p>
+      <a href="about.html" class="hero-cta">Discover more</a>
+      <span class="hero-scroll">Scroll</span>
+    </section>
+
+    <section>
+      <p class="section-label">What I do</p>
+      <h2 class="section-title">I can <em>help</em> with</h2>
+      <div class="services-grid">
+        <div class="service-item" data-num="01">
+          <h3>Digital &amp; Traditional Media Strategy</h3>
+          <p>Integrated campaigns that connect audiences across channels with intention and craft.</p>
+        </div>
+        <div class="service-item" data-num="02">
+          <h3>Content Creation &amp; Direction</h3>
+          <p>From concept to execution, written, visual, and filmed content that tells the right story.</p>
+        </div>
+        <div class="service-item" data-num="03">
+          <h3>Strategic Comms &amp; Crisis Management</h3>
+          <p>Clear, considered messaging that protects and elevates your brand when it matters most.</p>
+        </div>
+        <div class="service-item" data-num="04">
+          <h3>Research, Data Analysis &amp; Reporting</h3>
+          <p>Exhaustive research transformed into actionable insight and compelling narrative.</p>
+        </div>
+        <div class="service-item" data-num="05">
+          <h3>Project &amp; Timeline Management</h3>
+          <p>Structured delivery that keeps creative ambition and operational reality in sync.</p>
+        </div>
+        <div class="service-item" data-num="06">
+          <h3>Task &amp; Workflow Coordination</h3>
+          <p>Smooth systems that keep teams focused, accountable, and moving forward.</p>
+        </div>
+        <div class="service-item" data-num="07">
+          <h3>Website Management</h3>
+          <p>Content upload, editing, and ongoing care for your digital presence.</p>
+        </div>
+        <div class="service-item" data-num="08">
+          <h3>Creative Direction</h3>
+          <p>Shaping the vision, from brand identity to campaign aesthetics to film.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="quote-band">
+      <div class="band-bg" style="background-image:url('images/photo-sun-trees.jpg');"></div>
+      <p>Feel first, think later, <em>and see the world a little sideways.</em></p>
+    </div>
+
+    <section class="alt">
+      <p class="section-label">Kind words</p>
+      <h2 class="section-title">Lately</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>"You have an amazing gift with words Janie. You were awesome in putting your commitment into making the Green Vision a success. Thanks for everything."</p>
+          <cite>Sarah Needham, Founder &amp; CEO, Womxn for Climate Tech &amp; Innovation</cite>
+        </div>
+        <div class="testimonial">
+          <p>"Janie brought our brand to life in ways we never thought possible. Her creative vision and strategic approach have transformed how we communicate, leading to incredible growth in brand awareness, website traffic, and social engagement. Thanks to her skillset, GSE Technologies is thriving in a competitive market."</p>
+          <cite>Sabrina Agius, Founder &amp; CEO, GSE Technologies</cite>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-strip">
+      <div class="cs-bg" style="background-image:url('images/texture-stone.jpg');"></div>
+      <h2>Ready whenever <em>you are.</em></h2>
+      <a class="email" href="mailto:janieogeah@gmail.com">janieogeah@gmail.com</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Janie Ogeah · <a href="https://lucidumvisions.com" style="color:inherit">Lucidum Visions</a></p>
+    <ul class="footer-links">
+      <li><a href="about.html">Bio</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="film.html">Film</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function toggleNav() { document.getElementById('nav').classList.toggle('open'); }
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+    });
+  </script>
+</body>
+</html>
