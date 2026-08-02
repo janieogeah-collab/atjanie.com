@@ -113,4 +113,8 @@
   <script>
     function toggleNav() { document.getElementById('nav').classList.toggle('open'); }
     document.querySelectorAll('.nav-links a').forEach(a => {
-      a.addEventListener('c
+      a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
+    });
+  </script>
+</body>
+</html>

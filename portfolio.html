@@ -170,25 +170,25 @@
           <p>Stakeholder engagement and sustainability comms across Europe, Asia, Africa and the Americas for a global events leader.</p>
         </div>
         <div class="project-card">
-          <div class="pc-bg" style="background-image:url('photo-arches.jpg');"></div>
+          <div class="pc-bg" style="background-image:url('work-afa-sports.jpg');"></div>
           <div class="pc-client">AFA Sports</div>
           <h3>PR &amp; Content Strategy</h3>
           <p>PR and copywriting strategy for an athleisure brand, building narrative authority in a competitive market.</p>
         </div>
         <div class="project-card">
-          <div class="pc-bg" style="background-image:url('photo-mountain.jpg');"></div>
+          <div class="pc-bg" style="background-image:url('work-its-malta.jpg');"></div>
           <div class="pc-client">Institute of Tourism Studies</div>
           <h3>Institutional Communications</h3>
           <p>Creative strategy and institutional relationship management combining Marcomms expertise with MBA-level thinking.</p>
         </div>
         <div class="project-card">
-          <div class="pc-bg" style="background-image:url('photo-sun-trees.jpg');"></div>
+          <div class="pc-bg" style="background-image:url('work-pure-aesthetics.jpg');"></div>
           <div class="pc-client">Pure Aesthetics</div>
           <h3>Brand Identity &amp; Content</h3>
           <p>Visual creative direction, full content bank for a beauty and wellness clinic covering brand footage, treatment procedures, consultations, product demo and client testimonials. .</p>
         </div>
         <div class="project-card">
-          <div class="pc-bg" style="background-image:url('photo-cave.jpg');"></div>
+          <div class="pc-bg" style="background-image:url('work-loonytainment.jpg');"></div>
           <div class="pc-client">Loonytainment</div>
           <h3>Creative Direction &amp; Campaigns</h3>
           <p>End-to-end creative direction for campaigns combining entertainment with brand purpose.</p>
@@ -255,4 +255,12 @@
       a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
     });
     function openLightbox(img) {
-      document.getElementById('lightboxImg
+      document.getElementById('lightboxImg').src = img.src;
+      document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+  </script>
+</body>
+</html>
