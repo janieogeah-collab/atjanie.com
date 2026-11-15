@@ -3,109 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog — Janie Ogeah</title>
-  <meta name="description" content="Janie Ogeah's blog and writing samples — where sometimes she shuts her mouth and lets her fingers do the talking." />
+  <title>Words | Janie Ogeah</title>
+  <meta name="description" content="Essays, brand writing and research by Janie Ogeah." />
   <link rel="stylesheet" href="style.css" />
   <script src="motion.js" defer></script>
 </head>
 <body>
   <nav class="nav" id="nav">
-    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home">
-      <img src="atJanie_logo.svg" alt="JO – Janie Ogeah" />
-    </a>
+    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home"><img src="atJanie_logo_tight.svg" alt="JO, Janie Ogeah" /></a>
     <ul class="nav-links">
+      <li><a href="film.html">Films</a></li>
+      <li><a href="portfolio.html">Work</a></li>
       <li><a href="about.html">Bio</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="film.html">Film</a></li>
-      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="blog.html" class="active">Words</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
+  <p class="side-caption">Janie Ogeah &middot; Words</p>
 
   <main>
-    <!-- Cinematic hero -->
-    <div class="blog-hero">
-      <div class="bh-bg" style="background-image:url('photo-cave.jpg');"></div>
-      <p class="section-label">Words</p>
-      <h1>The<br/><em>blog</em></h1>
-      <div class="blog-cta-wrap">
-        <p>Sometimes I shut my mouth and let my fingers do the talking. Head over to read something cool.</p>
-        <a href="https://okblog5.wordpress.com" target="_blank" rel="noopener" class="btn-primary">
-          Read the blog ↗
-        </a>
+    <header class="banner">
+      <div class="bg" style="background-image:url('photo-cave.jpg');"></div>
+      <p class="slug">Voice over &middot; <b>Words</b></p>
+      <h1 class="display">Words<span class="amber">.</span></h1>
+      <p class="lede">Sometimes I shut my mouth and let my fingers do the talking.</p>
+      <div class="btn-row" style="margin-top:2rem;">
+        <a href="https://okblog5.wordpress.com" target="_blank" rel="noopener" class="btn">Read the blog</a>
       </div>
-    </div>
+    </header>
 
-    <!-- Writing Samples -->
     <section>
-      <p class="section-label">Writing samples</p>
-      <h2 class="section-title">Words that <em>worked.</em></h2>
-      <p style="font-size:1rem;color:var(--text);opacity:0.8;max-width:620px;line-height:1.75;margin-bottom:3.5rem;">
-        A selection of articles, brand copy, and content written for clients across tech, sports, sustainability and more.
-      </p>
-      <div class="writings-grid">
-
-        <a href="https://gsetechnologies.com/category/blog-posts/" target="_blank" rel="noopener" class="writing-card">
-          <span class="writing-tag">Technology · B2B</span>
-          <h3>GSE Technologies — Brand &amp; Content Strategy</h3>
-          <p>Articles, web copy, and campaign content for a technology solutions company building authority in a competitive market.</p>
-          <span class="writing-link">Read at GSE Technologies ↗</span>
-        </a>
-
-        <a href="https://okblog5.wordpress.com" target="_blank" rel="noopener" class="writing-card">
-          <span class="writing-tag">Personal · Opinion</span>
-          <h3>The Blog — Essays &amp; Observations</h3>
-          <p>Longer form writing, cultural commentary, and the occasional rant on creativity, film, and making sense of the world.</p>
-          <span class="writing-link">Read on WordPress ↗</span>
-        </a>
-
-        <a href="https://gvsummitexpo.com/blog/" target="_blank" rel="noopener" class="writing-card">
-          <span class="writing-tag">Sustainability · Events</span>
-          <h3>Green Vision Summit — Sustainability Comms</h3>
-          <p>Stakeholder communications and sustainability-focused content reaching audiences across four continents.</p>
-          <span class="writing-link">Read at Green Vision ↗</span>
-        </a>
-
-        <a href="https://www.researchgate.net/publication/396034467_An_Assessment_of_the_Current_State_of_Creativity_and_Innovation_Within_Solartonic" target="_blank" rel="noopener" class="writing-card">
-          <span class="writing-tag">Academic</span>
-          <h3>Desk Research</h3>
-          <p>An Assessment of the Current State of Creativity and Innovation Within Solartonic.</p>
-          <span class="writing-link">Read at ResearchGate ↗</span>
-        </a>
-
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="display" data-reveal>Words that worked<span class="amber">.</span></h2>
+          <p data-reveal>Articles, brand copy and research for clients across tech, sustainability and more.</p>
+        </div>
+        <div class="mosaic" data-reveal-kids>
+          <a class="tile t1" href="https://okblog5.wordpress.com" target="_blank" rel="noopener">
+            <div class="img" style="background-image:url('words-typewriter.jpg');"></div>
+            <span class="slug">Personal &middot; Opinion</span>
+            <h3>The blog: essays &amp; observations</h3>
+            <p>Longer writing, cultural commentary and the occasional rant on creativity, film and making sense of the world.</p>
+            <span class="go">Read on WordPress</span>
+          </a>
+          <a class="tile t2" href="https://gvsummitexpo.com/blog/" target="_blank" rel="noopener">
+            <div class="img" style="background-image:url('words-turbine.jpg');"></div>
+            <span class="slug">Sustainability &middot; Events</span>
+            <h3>Green Vision Summit: sustainability comms</h3>
+            <p>Stakeholder communications and sustainability content reaching audiences on four continents.</p>
+            <span class="go">Read at Green Vision</span>
+          </a>
+          <a class="tile t3" href="https://gsetechnologies.com/category/blog-posts/" target="_blank" rel="noopener">
+            <div class="img" style="background-image:url('words-solar.jpg');"></div>
+            <span class="slug">Technology &middot; B2B</span>
+            <h3>GSE Technologies: brand &amp; content</h3>
+            <p>Articles, web copy and campaign content for a technology solutions company building authority in a competitive market.</p>
+            <span class="go">Read at GSE</span>
+          </a>
+          <a class="tile t4" href="https://www.researchgate.net/publication/396034467_An_Assessment_of_the_Current_State_of_Creativity_and_Innovation_Within_Solartonic" target="_blank" rel="noopener">
+            <div class="img" style="background-image:url('words-library.jpg');"></div>
+            <span class="slug">Academic</span>
+            <h3>Creativity &amp; innovation within Solartonic</h3>
+            <p>Desk research assessing the current state of creativity and innovation within Solartonic.</p>
+            <span class="go">Read at ResearchGate</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- Quote band -->
-    <div class="quote-band">
-      <div class="band-bg" style="background-image:url('photo-mountain.jpg');"></div>
-      <p>Sometimes the most strategic thing<br/><em>is just writing the truth, clearly.</em></p>
+    <div class="photo-band quote-only">
+      <div class="bg" style="background-image:url('photo-mountain.jpg');"></div>
+      <p class="line" data-reveal>Sometimes the most strategic thing <span class="amber">is writing the truth, clearly.</span></p>
     </div>
 
-    <div class="contact-strip">
-      <div class="cs-bg" style="background-image:url('texture-stone.jpg');"></div>
-      <h2>Shall we <em>get started?</em></h2>
-      <a class="email" href="mailto:janieogeah@gmail.com">janieogeah@gmail.com</a>
-    </div>
+    <section class="contact">
+      <div class="wrap">
+        <h2 class="display sm" data-reveal>Need words that work<span class="amber">?</span></h2>
+        <p class="sub" data-reveal>Copy, scripts, strategy decks, the lot.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Janie Ogeah · <a href="https://lucidumvisions.com" style="color:inherit">Lucidum Visions</a></p>
-    <ul class="footer-links">
+    <p>&copy; 2026 Janie Ogeah &middot; <a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Lucidum Visions</a></p>
+    <ul>
+      <li><a href="film.html">Films</a></li>
+      <li><a href="portfolio.html">Work</a></li>
       <li><a href="about.html">Bio</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="film.html">Film</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="blog.html">Words</a></li>
+      <li><a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
   </footer>
-
-  <script>
-    function toggleNav() { document.getElementById('nav').classList.toggle('open'); }
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
-    });
-  </script>
 </body>
 </html>

@@ -3,121 +3,224 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Janie Ogeah, Narrative &amp; Creative Strategist</title>
-  <meta name="description" content="Janie Ogeah, narrative and creative strategist. Immersive purposeful stories across print, digital and film." />
+  <title>Janie Ogeah | Writer, Director, Creative Strategist</title>
+  <meta name="description" content="Janie Ogeah is a Malta-based writer, director and creative strategist. Every film and every brief starts with the same two words: what if?" />
+  <meta property="og:title" content="Janie Ogeah | What if?" />
+  <meta property="og:description" content="Writer, director and creative strategist in Malta. Films about dread, history and futures we didn&rsquo;t order." />
+  <meta property="og:image" content="https://atjanie.com/hero-smoke.jpg" />
   <link rel="stylesheet" href="style.css" />
   <script src="motion.js" defer></script>
 </head>
 <body>
   <nav class="nav" id="nav">
-    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home">
-      <img src="atJanie_logo.svg" alt="JO – Janie Ogeah" />
-    </a>
+    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home"><img src="atJanie_logo_tight.svg" alt="JO, Janie Ogeah" /></a>
     <ul class="nav-links">
+      <li><a href="film.html">Films</a></li>
+      <li><a href="portfolio.html">Work</a></li>
       <li><a href="about.html">Bio</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="film.html">Film</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="blog.html">Words</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
+  <p class="side-caption">Janie Ogeah &middot; Films &amp; Strategy &middot; Malta</p>
 
   <main>
-    <section class="hero-cinema">
-      <div class="hero-bg" style="background-image:url('hero-marina.jpg');"></div>
-      <p class="hero-tag">Narrative &amp; Creative Strategist, Filmmaker</p>
-      <h1 class="hero-title">
-        Through immersive purposeful stories<br class="hero-title-break"/>
-        across <em>print, digital</em> and <em>film.</em>
+    <!-- HERO -->
+    <header class="hero">
+      <video class="hero-bg hero-video" autoplay muted loop playsinline preload="auto" poster="hero-smoke.jpg" aria-hidden="true">
+        <source src="hero-smoke.mp4" type="video/mp4" />
+      </video>
+      <p class="slug">Ext. Malta &ndash; Day &middot; <b>Unstaged</b></p>
+      <h1 class="hero-title display" aria-label="What if?">
+        <span class="line"><span class="w">What</span> <span class="w d2">if<span class="q">?</span></span></span>
       </h1>
-      <p class="hero-subtitle">Putting the human where it matters, in strategy, in story, in every frame.</p>
-      <a href="about.html" class="hero-cta">Discover more</a>
-      <span class="hero-scroll"></span>
+      <div class="hero-foot">
+        <p class="hero-lede">Every film I write starts with those two words. So does every brief.</p>
+        <div class="hero-meta">
+          <p>Janie Ogeah<br/>Writer, director, creative strategist</p>
+          <div class="btn-row">
+            <a href="film.html" class="btn">See the films</a>
+            <a href="portfolio.html" class="link">Hire the strategist</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- THE STING -->
+    <section class="sting">
+      <div class="wrap">
+        <p class="slug" data-reveal>A small confession</p>
+        <h2 class="display" data-reveal style="margin-top:1.25rem;">I won&rsquo;t tell you I&rsquo;m a <s>passionate storyteller</s><span class="amber">.</span></h2>
+      </div>
+    </section>
+    <div class="typeband" aria-label="Everyone says that. Nobody hires it.">
+      <p data-type="Everyone says that. Nobody hires it."></p>
+    </div>
+    <section class="pivot">
+      <div class="wrap">
+        <p class="slug" data-reveal>What you actually get</p>
+        <p class="big" data-reveal>Someone who asks the awkward question early, then turns the answer into <em>a film, a campaign, or both.</em> I feel first, think later, and see the world a little sideways.</p>
+      </div>
     </section>
 
-    <section>
-      <p class="section-label">What I do</p>
-      <h2 class="section-title">I can <em>help</em> with</h2>
-      <div class="services-grid">
-        <div class="service-item" data-num="01">
-          <h3>Digital &amp; Traditional Media Strategy</h3>
-          <p>Integrated campaigns that connect audiences across channels with intention and craft.</p>
+    <!-- THE SLATE -->
+    <section class="rule" style="padding-left:0;padding-right:0;">
+      <div class="wrap slate-head">
+        <div class="section-head">
+          <h2 class="display" data-reveal>The slate</h2>
+          <p data-reveal>Five what-ifs I couldn&rsquo;t leave alone. Dread, history and futures we didn&rsquo;t order.</p>
         </div>
-        <div class="service-item" data-num="02">
-          <h3>Content Creation &amp; Direction</h3>
-          <p>From concept to execution, written, visual, and filmed content that tells the right story.</p>
+      </div>
+      <div class="carousel" data-carousel aria-roledescription="carousel" aria-label="Films">
+        <div class="carousel-track">
+          <a class="slide" href="film.html#ttcb" aria-roledescription="slide" aria-label="The Thing That Came Back">
+            <div class="blur" style="background-image:url('image.png');"></div>
+            <img src="image.png" alt="The Thing That Came Back poster" />
+            <div>
+              <p class="q">What if the last call on the night shift <b>wasn&rsquo;t human?</b></p>
+              <p class="meta"><strong>The Thing That Came Back</strong>2026 &middot; Writer, director, producer</p>
+              <span class="link enter">Enter the film</span>
+            </div>
+          </a>
+          <a class="slide" href="film.html#otf" aria-roledescription="slide" aria-label="Off The Face">
+            <div class="blur" style="background-image:url('OTF_poster004.jpg');"></div>
+            <img src="OTF_poster004.jpg" alt="Off The Face poster" />
+            <div>
+              <p class="q">What if the biggest threat to your film <b>is your own producer?</b></p>
+              <p class="meta"><strong>Off The Face</strong>2026 &middot; Co-writer, co-producer, actor</p>
+              <span class="link enter">Enter the film</span>
+            </div>
+          </a>
+          <a class="slide" href="film.html#bf" aria-roledescription="slide" aria-label="Black Feeling">
+            <div class="blur" style="background-image:url('Black_feeling_poster.jpeg');"></div>
+            <img src="Black_feeling_poster.jpeg" alt="Black Feeling poster" />
+            <div>
+              <p class="q">What if the thing hunting you <b>lives inside your head?</b></p>
+              <p class="meta"><strong>Black Feeling</strong>2025 &middot; Writer, director, producer</p>
+              <span class="link enter">Enter the film</span>
+            </div>
+          </a>
+          <a class="slide" href="film.html#wktl" aria-roledescription="slide" aria-label="Who Killed the Laughter">
+            <div class="blur" style="background-image:url('who_killed_the_laughter_poster.jpeg');"></div>
+            <img src="who_killed_the_laughter_poster.jpeg" alt="Who Killed the Laughter poster" />
+            <div>
+              <p class="q">What if a joke was <b>the most dangerous thing in the country?</b></p>
+              <p class="meta"><strong>Who Killed the Laughter</strong>2025 &middot; Writer</p>
+              <span class="link enter">Enter the film</span>
+            </div>
+          </a>
+          <a class="slide" href="film.html#hitm" aria-roledescription="slide" aria-label="Human in the Machine">
+            <div class="blur" style="background-image:url('Human_in_the_machine_poster.jpeg');"></div>
+            <img src="Human_in_the_machine_poster.jpeg" alt="Human in the Machine poster" />
+            <div>
+              <p class="q">What if the one who finally listens <b>is a machine in the park?</b></p>
+              <p class="meta"><strong>Human in the Machine</strong>2024 &middot; Writer, director, producer</p>
+              <span class="link enter">Enter the film</span>
+            </div>
+          </a>
         </div>
-        <div class="service-item" data-num="03">
-          <h3>Strategic Comms &amp; Crisis Management</h3>
-          <p>Clear, considered messaging that protects and elevates your brand when it matters most.</p>
-        </div>
-        <div class="service-item" data-num="04">
-          <h3>Research, Data Analysis &amp; Reporting</h3>
-          <p>Exhaustive research transformed into actionable insight and compelling narrative.</p>
-        </div>
-        <div class="service-item" data-num="05">
-          <h3>Project &amp; Timeline Management</h3>
-          <p>Structured delivery that keeps creative ambition and operational reality in sync.</p>
-        </div>
-        <div class="service-item" data-num="06">
-          <h3>Task &amp; Workflow Coordination</h3>
-          <p>Smooth systems that keep teams focused, accountable, and moving forward.</p>
-        </div>
-        <div class="service-item" data-num="07">
-          <h3>Website Management</h3>
-          <p>Content upload, editing, and ongoing care for your digital presence.</p>
-        </div>
-        <div class="service-item" data-num="08">
-          <h3>Creative Direction</h3>
-          <p>Shaping the vision, from brand identity to campaign aesthetics to film.</p>
+        <div class="carousel-ui">
+          <div class="dots" role="tablist"></div>
+          <button class="play" type="button" aria-label="Pause slideshow">
+            <svg class="i-pause" viewBox="0 0 14 14"><rect x="2" y="1" width="3.5" height="12" rx="1"/><rect x="8.5" y="1" width="3.5" height="12" rx="1"/></svg>
+            <svg class="i-play" viewBox="0 0 14 14"><path d="M3 1.5v11l9.5-5.5z"/></svg>
+          </button>
         </div>
       </div>
     </section>
 
-    <div class="quote-band">
-      <div class="band-bg" style="background-image:url('photo-sun-trees.jpg');"></div>
-      <p>Feel first, think later, <em>and see the world a little sideways.</em></p>
-    </div>
-
-    <section class="alt">
-      <p class="section-label">Kind words</p>
-      <h2 class="section-title">Lately</h2>
-      <div class="testimonials">
-        <div class="testimonial">
-          <p>"You have an amazing gift with words Janie. You were awesome in putting your commitment into making the Green Vision a success. Thanks for everything."</p>
-          <cite>Sarah Needham, Founder &amp; CEO, Womxn for Climate Tech &amp; Innovation</cite>
+    <!-- DAY JOB -->
+    <section class="dayjob rule">
+      <div class="wrap">
+        <div class="intro">
+          <p class="slug" data-reveal>Int. Office &ndash; Day</p>
+          <h2 class="display" data-reveal style="margin-top:1.25rem;">By day, brands get the same question<span class="amber">.</span></h2>
+          <p data-reveal>A decade in marketing and communications, from a Nigerian newsroom to global sustainability summits to Malta&rsquo;s tourism school. I bring the screenwriter&rsquo;s habit to strategy: find the conflict, raise the stakes, then tell it so people feel it before they think it.</p>
+          <p data-reveal style="margin-top:2rem;"><a href="portfolio.html" class="link">See the work</a></p>
         </div>
-        <div class="testimonial">
-          <p>"Janie brought our brand to life in ways we never thought possible. Her creative vision and strategic approach have transformed how we communicate, leading to incredible growth in brand awareness, website traffic, and social engagement. Thanks to her skillset, GSE Technologies is thriving in a competitive market."</p>
-          <cite>Sabrina Agius, Founder &amp; CEO, GSE Technologies</cite>
+      </div>
+      <div class="wrap">
+        <div class="pcards">
+          <article class="pcard wide" data-reveal tabindex="0" role="button" aria-expanded="false">
+            <div class="img" style="background-image:url('GVSE-100.jpg');"></div>
+            <span class="plus" aria-hidden="true"></span>
+            <p class="tag">Strategy</p>
+            <h3>Creative strategy</h3>
+            <div class="more"><div>
+              <p>Campaigns built on an insight worth arguing about. Research, positioning, channel plan, the lot. I&rsquo;ve done it for sustainability summits on four continents, a sustainable technology company and Malta&rsquo;s tourism school.</p>
+              <a href="portfolio.html" class="link">See the work</a>
+            </div></div>
+          </article>
+          <article class="pcard" data-reveal tabindex="0" role="button" aria-expanded="false">
+            <div class="img" style="background-image:url('film-bts-3.jpg');"></div>
+            <span class="plus" aria-hidden="true"></span>
+            <p class="tag">Content</p>
+            <h3>Content &amp; creative direction</h3>
+            <div class="more"><div>
+              <p>Written, photographed and filmed, from concept to final cut. I shoot on a Sony A6700 and edit in DaVinci Resolve, so the idea and the edit stay in the same head.</p>
+              <a href="portfolio.html" class="link">See the work</a>
+            </div></div>
+          </article>
+          <article class="pcard" data-reveal tabindex="0" role="button" aria-expanded="false">
+            <div class="img" style="background-image:url('photo-valletta.jpg');"></div>
+            <span class="plus" aria-hidden="true"></span>
+            <p class="tag">Communications</p>
+            <h3>Comms when it counts</h3>
+            <div class="more"><div>
+              <p>Strategic and crisis communications that protect a brand on its worst day and move it forward on every other. A newsroom start means I know which sentence becomes the headline.</p>
+              <a href="portfolio.html" class="link">See the work</a>
+            </div></div>
+          </article>
+        </div>
+
+        <p class="clients" data-reveal><span class="slug">Trusted by</span><span class="c">GSE Technologies</span> <span class="c">Green Vision Summit &amp; Expo</span> <span class="c">Institute of Tourism Studies</span> <span class="c">AFA Sports</span> <span class="c">Pure Aesthetics</span> <span class="c">Loonytainment</span></p>
+      </div>
+    </section>
+
+    <!-- QUOTES -->
+    <section class="quotes rule">
+      <div class="wrap">
+        <div class="quote" data-reveal>
+          <p>You have an amazing gift with words Janie. You were awesome in putting your commitment into making the Green Vision a success. Thanks for everything.</p>
+          <cite class="slug">Sarah Needham &middot; Founder &amp; CEO, Womxn for Climate Tech &amp; Innovation</cite>
+        </div>
+        <div class="quote" data-reveal>
+          <p>Janie brought our brand to life in ways we never thought possible. Her creative vision and strategic approach have transformed how we communicate, leading to incredible growth in brand awareness, website traffic, and social engagement.</p>
+          <cite class="slug">Sabrina Agius &middot; Founder &amp; CEO, GSE Technologies</cite>
         </div>
       </div>
     </section>
 
-    <div class="contact-strip">
-      <div class="cs-bg" style="background-image:url('texture-stone.jpg');"></div>
-      <h2>Shall we <em>get started?</em></h2>
-      <a class="email" href="mailto:janieogeah@gmail.com">janieogeah@gmail.com</a>
+    <!-- LUCIDUM -->
+    <div class="photo-band">
+      <div class="bg" style="background-image:url('film-bts-1.jpg');"></div>
+      <p class="slug" data-reveal>Lucidum Visions</p>
+      <h2 class="display" data-reveal style="margin-top:1rem;">The what-ifs continue on Instagram<span class="amber">.</span></h2>
+      <p data-reveal>Short films, sideways ideas and the making of both. Come for the dread, stay for the behind the scenes.</p>
+      <div class="btn-row" data-reveal>
+        <a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener" class="btn">Follow @lucidumvisions</a>
+      </div>
     </div>
+
+    <!-- CONTACT -->
+    <section class="contact">
+      <div class="wrap">
+        <h2 class="display" data-reveal>Got a<br/>what-if<span class="amber">?</span></h2>
+        <p class="sub" data-reveal>Bring it. A film, a brand, or something that doesn&rsquo;t have a name yet.</p>
+        <a class="email" href="mailto:janieogeah@gmail.com" data-reveal>janieogeah@gmail.com</a>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Janie Ogeah · <a href="https://lucidumvisions.com" style="color:inherit">Lucidum Visions</a></p>
-    <ul class="footer-links">
+    <p>&copy; 2026 Janie Ogeah &middot; <a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Lucidum Visions</a></p>
+    <ul>
+      <li><a href="film.html">Films</a></li>
+      <li><a href="portfolio.html">Work</a></li>
       <li><a href="about.html">Bio</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="film.html">Film</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="blog.html">Words</a></li>
+      <li><a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
   </footer>
-
-  <script>
-    function toggleNav() { document.getElementById('nav').classList.toggle('open'); }
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
-    });
-  </script>
 </body>
 </html>

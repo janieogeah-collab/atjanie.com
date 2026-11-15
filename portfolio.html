@@ -3,220 +3,382 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — Janie Ogeah</title>
-  <meta name="description" content="Portfolio of Janie Ogeah, marketing strategy, creative direction, and photography." />
+  <title>Work | Janie Ogeah</title>
+  <meta name="description" content="Creative strategy, content direction and communications by Janie Ogeah for brands and institutions across B2B, B2C and mission-driven sectors." />
   <link rel="stylesheet" href="style.css" />
   <script src="motion.js" defer></script>
-  <style>
-    .clients-intro { max-width: 640px; margin-bottom: 4rem; }
-    .clients-intro p { font-size: 1.05rem; color: var(--text); opacity: 0.85; line-height: 1.75; }
-
-    .clients-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5px;
-      background: var(--border);
-      border: 1px solid var(--border);
-    }
-    .client-cell {
-      background: var(--surface);
-      padding: 2.5rem 2rem;
-      display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
-      min-height: 140px;
-      border-left: 2px solid transparent;
-      transition: all var(--transition);
-      position: relative;
-    }
-    .client-cell:hover { background: #1a1a1a; border-left-color: var(--accent); }
-    .client-cell .c-num {
-      position: absolute; top: 1rem; right: 1.25rem;
-      font-size: 0.65rem; letter-spacing: 0.2em; color: var(--text-muted);
-    }
-    .client-cell .c-name { font-size: 1rem; font-weight: bold; color: var(--text); line-height: 1.3; margin-bottom: 0.4rem; }
-    .client-cell .c-sector { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 2rem;
-    }
-    .project-card {
-      position: relative; overflow: hidden; isolation: isolate;
-      min-height: 320px;
-      display: flex; flex-direction: column; justify-content: flex-end;
-      padding: 2rem;
-      border: 1px solid var(--border);
-      transition: all var(--transition);
-      background: var(--surface);
-    }
-    .project-card:hover { border-color: var(--accent-dim); transform: translateY(-3px); }
-    .project-card .pc-bg {
-      position: absolute; inset: 0; z-index: -2;
-      background-size: cover; background-position: center;
-      filter: grayscale(80%) contrast(1.1) brightness(0.35);
-      transition: filter var(--transition), transform 0.5s ease;
-    }
-    .project-card:hover .pc-bg { filter: grayscale(40%) contrast(1.05) brightness(0.42); transform: scale(1.04); }
-    .project-card::before {
-      content: ''; position: absolute; inset: 0; z-index: -1;
-      background: linear-gradient(180deg, transparent 20%, rgba(7,7,7,0.92) 100%);
-    }
-    .project-card .pc-client { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
-    .project-card h3 { font-size: 1.2rem; font-weight: bold; color: var(--text); line-height: 1.3; margin-bottom: 0.5rem; }
-    .project-card p { font-size: 0.88rem; color: var(--text); opacity: 0.75; line-height: 1.6; }
-
-    @media (max-width: 900px) { .clients-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 500px) { .clients-grid { grid-template-columns: 1fr; } }
-  </style>
 </head>
 <body>
   <nav class="nav" id="nav">
-    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home">
-      <img src="atJanie_logo.svg" alt="JO – Janie Ogeah" />
-    </a>
+    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home"><img src="atJanie_logo_tight.svg" alt="JO, Janie Ogeah" /></a>
     <ul class="nav-links">
+      <li><a href="film.html">Films</a></li>
+      <li><a href="portfolio.html" class="active">Work</a></li>
       <li><a href="about.html">Bio</a></li>
-      <li><a href="portfolio.html" class="active">Portfolio</a></li>
-      <li><a href="film.html">Film</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="blog.html">Words</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
+  <p class="side-caption">Int. Office &middot; Day</p>
 
   <main>
-    <div class="page-banner">
-      <div class="banner-bg" style="background-image:url('photo-towers.jpg');"></div>
-      <p class="section-label">Portfolio</p>
-      <h1>The proof is<br/><em>in the pudding.</em></h1>
-    </div>
+    <header class="banner">
+      <div class="bg" style="background-image:url('photo-towers.jpg');"></div>
+      <p class="slug">Int. Office &ndash; Day &middot; <b>Work</b></p>
+      <h1 class="display">The proof is in the pudding<span class="amber">.</span></h1>
+      <p class="lede">Ten years across B2B, B2C and mission-driven sectors. Same method as the films: find the conflict, raise the stakes, make people feel it.</p>
+    </header>
 
-    <!-- Clients Served -->
     <section>
-      <h2 class="section-title">10+ years across B2B, B2C,<br/><em>and mission-driven sectors.</em></h2>
-      <div class="clients-intro">
-        <p>From startups to international institutions, I've developed and executed comprehensive strategies that connect, convert, and endure.</p>
-      </div>
-      <div class="clients-grid">
-        <div class="client-cell">
-          <span class="c-num">01</span>
-          <div class="c-name">GSE Technologies</div>
-          <div class="c-sector">Sustainable solutions · B2B</div>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="display" data-reveal>All work and play<span class="amber">.</span></h2>
+          <p data-reveal>&hellip;makes Janie. Jack can keep the typewriter.</p>
         </div>
-        <div class="client-cell">
-          <span class="c-num">02</span>
-          <div class="c-name">AFA Sports</div>
-          <div class="c-sector">Sports Apparel · B2C</div>
-        </div>
-        <div class="client-cell">
-          <span class="c-num">03</span>
-          <div class="c-name">Green Vision Summit &amp; Expo</div>
-          <div class="c-sector">Events · Sustainability</div>
-        </div>
-        <div class="client-cell">
-          <span class="c-num">04</span>
-          <div class="c-name">Institute of Tourism Studies</div>
-          <div class="c-sector">Education · Public Sector</div>
-        </div>
-        <div class="client-cell">
-          <span class="c-num">05</span>
-          <div class="c-name">FEELhub</div>
-          <div class="c-sector">Tech · B2C</div>
-        </div>
-        <div class="client-cell">
-          <span class="c-num">06</span>
-          <div class="c-name">Zenera Consulting</div>
-          <div class="c-sector">Digital Marketing & PR · B2B</div>
-        </div>
-        <div class="client-cell">
-          <span class="c-num">07</span>
-          <div class="c-name">ECO Village</div>
-          <div class="c-sector">Sustainability · Mission-driven</div>
-        </div>
-        <div class="client-cell">
-          <span class="c-num">08</span>
-          <div class="c-name">Loonytainment</div>
-          <div class="c-sector">Creative</div>
-        </div>
-        <div class="client-cell">
-          <span class="c-num">09</span>
-          <div class="c-name">Pure Aesthetics</div>
-          <div class="c-sector">Beauty · B2C</div>
-        </div>
-        <div class="client-cell">
-          <span class="c-num">10</span>
-          <div class="c-name">Delta Print &amp; Publishing</div>
-          <div class="c-sector">Print Media · Public Sector</div>
+        <div class="work-grid" data-reveal-kids>
+          <article class="work">
+            <div class="bg" style="background-image:url('GSE-kids.jpg');"></div>
+            <p class="slug">GSE Technologies</p>
+            <h3>Brand strategy &amp; digital marketing</h3>
+            <p>Full brand overhaul and an integrated digital campaign, with measurable growth in awareness, website traffic and social engagement.</p>
+          </article>
+          <article class="work">
+            <div class="bg" style="background-image:url('GVSE-100.jpg');"></div>
+            <p class="slug">Green Vision Summit &amp; Expo</p>
+            <h3>Sustainability communications</h3>
+            <p>Stakeholder engagement and sustainability comms across Europe, Asia, Africa and the Americas for a global events leader.</p>
+          </article>
+          <article class="work">
+            <div class="bg" style="background-image:url('work-its-malta.jpg');"></div>
+            <p class="slug">Institute of Tourism Studies</p>
+            <h3>Institutional communications</h3>
+            <p>Creative strategy, content build and direction, storytelling and story selling for institutional relationship management.</p>
+          </article>
+          <article class="work">
+            <div class="bg" style="background-image:url('work-afa-sports.jpg');"></div>
+            <p class="slug">AFA Sports</p>
+            <h3>PR &amp; content strategy</h3>
+            <p>PR and copywriting strategy for an athleisure brand, building narrative authority in a crowded market.</p>
+          </article>
+          <article class="work">
+            <div class="bg" style="background-image:url('work-pure-aesthetics.jpg');"></div>
+            <p class="slug">Pure Aesthetics</p>
+            <h3>Visual marketing</h3>
+            <p>Visual creative direction and a full content bank for a beauty and wellness clinic: brand footage, treatments, consultations, product demos and client testimonials.</p>
+          </article>
+          <article class="work">
+            <div class="bg" style="background-image:url('work-loonytainment.jpg');"></div>
+            <p class="slug">Loonytainment</p>
+            <h3>Creative direction &amp; campaigns</h3>
+            <p>End-to-end creative direction for campaigns that pair entertainment with brand purpose.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Selected Projects -->
-    <section class="alt">
-           <h2 class="section-title">Work that <em>moved/still moving the needle.</em></h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="pc-bg" style="background-image:url('GSE-kids.jpg');"></div>
-          <div class="pc-client">GSE Technologies</div>
-          <h3>Brand Strategy &amp; Digital Marketing</h3>
-          <p>Full brand overhaul and integrated digital marketing campaign resulting in measurable growth in awareness, website traffic, and social engagement.</p>
+    <section class="rule">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="display" data-reveal>Who I&rsquo;ve worked with<span class="amber">.</span></h2>
+          <p data-reveal>Each star a client, each constellation a sector. From startups to international institutions.</p>
         </div>
-        <div class="project-card">
-          <div class="pc-bg" style="background-image:url('GVSE-100.jpg');"></div>
-          <div class="pc-client">Green Vision Summit &amp; Expo</div>
-          <h3>Sustainability Communications</h3>
-          <p>Stakeholder engagement and sustainability comms across Europe, Asia, Africa and the Americas for a global events leader.</p>
-        </div>
-        <div class="project-card">
-          <div class="pc-bg" style="background-image:url('work-afa-sports.jpg');"></div>
-          <div class="pc-client">AFA Sports</div>
-          <h3>PR &amp; Content Strategy</h3>
-          <p>PR and copywriting strategy for an athleisure brand, building narrative authority in a competitive market.</p>
-        </div>
-        <div class="project-card">
-          <div class="pc-bg" style="background-image:url('work-its-malta.jpg');"></div>
-          <div class="pc-client">Institute of Tourism Studies</div>
-          <h3>Institutional Communications</h3>
-          <p>Creative strategy, content build, content direction, storytelling and story selling for overall institutional relationship management.</p>
-        </div>
-        <div class="project-card">
-          <div class="pc-bg" style="background-image:url('work-pure-aesthetics.jpg');"></div>
-          <div class="pc-client">Pure Aesthetics</div>
-          <h3>Visual Marketing</h3>
-          <p>Visual creative direction, full content bank for a beauty and wellness clinic covering brand footage, treatment procedures, consultations, product demo and client testimonials. .</p>
-        </div>
-        <div class="project-card">
-          <div class="pc-bg" style="background-image:url('work-loonytainment.jpg');"></div>
-          <div class="pc-client">Loonytainment</div>
-          <h3>Creative Direction &amp; Campaigns</h3>
-          <p>End-to-end creative direction for campaigns combining entertainment with brand purpose.</p>
+        <div class="sky-wrap" data-reveal>
+          <div class="sky-scroll">
+<svg class="sky" viewBox="0 0 1200 640" role="img" aria-label="Star map of clients: GSE Technologies, Zenera Consulting, AFA Sports, FEELhub, Pure Aesthetics, Green Vision Summit and Expo, ECO Village, Institute of Tourism Studies, Delta Print and Publishing, Loonytainment">
+<circle class="bgstar" cx="389" cy="97" r="1.4" opacity="0.17"/>
+<circle class="bgstar tw" style="--t:3.3s;--d:1.0s" cx="113" cy="373" r="1.1" opacity="0.25"/>
+<circle class="bgstar" cx="661" cy="38" r="1.1" opacity="0.21"/>
+<circle class="bgstar tw" style="--t:2.7s;--d:2.2s" cx="753" cy="607" r="1.1" opacity="0.41"/>
+<circle class="bgstar" cx="160" cy="268" r="1.1" opacity="0.2"/>
+<circle class="bgstar" cx="979" cy="116" r="1.1" opacity="0.41"/>
+<circle class="bgstar" cx="117" cy="456" r="1.1" opacity="0.18"/>
+<circle class="bgstar" cx="816" cy="274" r="0.8" opacity="0.36"/>
+<circle class="bgstar" cx="434" cy="159" r="0.6" opacity="0.46"/>
+<circle class="bgstar" cx="689" cy="336" r="0.8" opacity="0.48"/>
+<circle class="bgstar" cx="1176" cy="76" r="0.9" opacity="0.22"/>
+<circle class="bgstar" cx="1120" cy="270" r="1.4" opacity="0.18"/>
+<circle class="bgstar" cx="947" cy="524" r="0.8" opacity="0.46"/>
+<circle class="bgstar" cx="696" cy="292" r="0.5" opacity="0.58"/>
+<circle class="bgstar" cx="797" cy="39" r="1.4" opacity="0.29"/>
+<circle class="bgstar" cx="817" cy="285" r="1.4" opacity="0.32"/>
+<circle class="bgstar" cx="27" cy="295" r="0.6" opacity="0.42"/>
+<circle class="bgstar" cx="262" cy="184" r="1.4" opacity="0.26"/>
+<circle class="bgstar" cx="1046" cy="52" r="0.9" opacity="0.33"/>
+<circle class="bgstar" cx="164" cy="276" r="1.1" opacity="0.28"/>
+<circle class="bgstar tw" style="--t:2.7s;--d:0.9s" cx="431" cy="566" r="0.6" opacity="0.22"/>
+<circle class="bgstar tw" style="--t:3.6s;--d:2.4s" cx="582" cy="377" r="0.8" opacity="0.28"/>
+<circle class="bgstar" cx="382" cy="80" r="1.1" opacity="0.58"/>
+<circle class="bgstar" cx="888" cy="292" r="1.4" opacity="0.51"/>
+<circle class="bgstar" cx="479" cy="66" r="1.4" opacity="0.33"/>
+<circle class="bgstar tw" style="--t:2.0s;--d:0.6s" cx="1182" cy="282" r="0.5" opacity="0.3"/>
+<circle class="bgstar" cx="122" cy="233" r="0.5" opacity="0.18"/>
+<circle class="bgstar" cx="451" cy="406" r="0.8" opacity="0.42"/>
+<circle class="bgstar" cx="138" cy="312" r="0.9" opacity="0.37"/>
+<circle class="bgstar" cx="173" cy="480" r="1.4" opacity="0.27"/>
+<circle class="bgstar" cx="194" cy="15" r="1.1" opacity="0.31"/>
+<circle class="bgstar" cx="1097" cy="485" r="0.8" opacity="0.59"/>
+<circle class="bgstar" cx="835" cy="167" r="0.8" opacity="0.56"/>
+<circle class="bgstar" cx="267" cy="347" r="1.1" opacity="0.3"/>
+<circle class="bgstar" cx="974" cy="630" r="0.6" opacity="0.51"/>
+<circle class="bgstar" cx="888" cy="145" r="1.1" opacity="0.37"/>
+<circle class="bgstar" cx="1188" cy="506" r="0.9" opacity="0.27"/>
+<circle class="bgstar" cx="1148" cy="286" r="1.4" opacity="0.59"/>
+<circle class="bgstar" cx="438" cy="141" r="0.6" opacity="0.36"/>
+<circle class="bgstar" cx="579" cy="631" r="1.1" opacity="0.53"/>
+<circle class="bgstar tw" style="--t:3.2s;--d:2.8s" cx="784" cy="512" r="0.5" opacity="0.53"/>
+<circle class="bgstar" cx="239" cy="569" r="0.9" opacity="0.51"/>
+<circle class="bgstar" cx="961" cy="622" r="0.9" opacity="0.36"/>
+<circle class="bgstar" cx="102" cy="102" r="0.6" opacity="0.16"/>
+<circle class="bgstar" cx="558" cy="420" r="1.1" opacity="0.52"/>
+<circle class="bgstar tw" style="--t:4.4s;--d:2.9s" cx="789" cy="224" r="1.1" opacity="0.4"/>
+<circle class="bgstar" cx="123" cy="480" r="0.6" opacity="0.35"/>
+<circle class="bgstar" cx="991" cy="135" r="0.8" opacity="0.25"/>
+<circle class="bgstar tw" style="--t:4.7s;--d:1.4s" cx="916" cy="209" r="1.1" opacity="0.34"/>
+<circle class="bgstar" cx="550" cy="373" r="1.1" opacity="0.34"/>
+<circle class="bgstar" cx="602" cy="340" r="1.1" opacity="0.38"/>
+<circle class="bgstar" cx="932" cy="389" r="0.6" opacity="0.23"/>
+<circle class="bgstar" cx="870" cy="356" r="0.8" opacity="0.46"/>
+<circle class="bgstar" cx="579" cy="497" r="1.1" opacity="0.18"/>
+<circle class="bgstar" cx="51" cy="63" r="0.9" opacity="0.4"/>
+<circle class="bgstar" cx="1095" cy="284" r="1.1" opacity="0.59"/>
+<circle class="bgstar" cx="239" cy="177" r="1.1" opacity="0.39"/>
+<circle class="bgstar" cx="1130" cy="447" r="0.8" opacity="0.57"/>
+<circle class="bgstar" cx="243" cy="286" r="0.9" opacity="0.2"/>
+<circle class="bgstar" cx="87" cy="154" r="0.5" opacity="0.25"/>
+<circle class="bgstar" cx="147" cy="497" r="1.4" opacity="0.44"/>
+<circle class="bgstar" cx="304" cy="88" r="0.9" opacity="0.25"/>
+<circle class="bgstar tw" style="--t:3.3s;--d:2.1s" cx="478" cy="312" r="1.4" opacity="0.52"/>
+<circle class="bgstar" cx="407" cy="125" r="0.8" opacity="0.19"/>
+<circle class="bgstar" cx="406" cy="294" r="1.4" opacity="0.16"/>
+<circle class="bgstar" cx="749" cy="328" r="0.5" opacity="0.2"/>
+<circle class="bgstar tw" style="--t:4.3s;--d:1.1s" cx="274" cy="561" r="0.5" opacity="0.27"/>
+<circle class="bgstar" cx="155" cy="270" r="1.4" opacity="0.52"/>
+<circle class="bgstar" cx="179" cy="588" r="1.1" opacity="0.37"/>
+<circle class="bgstar tw" style="--t:4.8s;--d:2.5s" cx="335" cy="512" r="0.6" opacity="0.34"/>
+<circle class="bgstar" cx="962" cy="54" r="0.6" opacity="0.18"/>
+<circle class="bgstar" cx="545" cy="217" r="1.1" opacity="0.34"/>
+<circle class="bgstar tw" style="--t:2.5s;--d:0.2s" cx="746" cy="28" r="1.4" opacity="0.26"/>
+<circle class="bgstar" cx="242" cy="200" r="0.8" opacity="0.39"/>
+<circle class="bgstar tw" style="--t:2.8s;--d:0.1s" cx="535" cy="430" r="0.8" opacity="0.31"/>
+<circle class="bgstar" cx="880" cy="353" r="0.6" opacity="0.38"/>
+<circle class="bgstar" cx="536" cy="421" r="1.4" opacity="0.34"/>
+<circle class="bgstar" cx="1002" cy="252" r="1.1" opacity="0.29"/>
+<circle class="bgstar tw" style="--t:5.0s;--d:3.9s" cx="275" cy="127" r="1.4" opacity="0.48"/>
+<circle class="bgstar" cx="1004" cy="9" r="1.4" opacity="0.48"/>
+<circle class="bgstar" cx="196" cy="54" r="0.9" opacity="0.54"/>
+<circle class="bgstar" cx="338" cy="155" r="0.8" opacity="0.17"/>
+<circle class="bgstar" cx="323" cy="2" r="0.8" opacity="0.58"/>
+<circle class="bgstar" cx="656" cy="156" r="0.8" opacity="0.25"/>
+<circle class="bgstar" cx="402" cy="54" r="0.8" opacity="0.38"/>
+<circle class="bgstar tw" style="--t:3.8s;--d:1.6s" cx="606" cy="3" r="0.8" opacity="0.52"/>
+<circle class="bgstar" cx="360" cy="403" r="0.5" opacity="0.41"/>
+<circle class="bgstar" cx="901" cy="421" r="1.4" opacity="0.5"/>
+<circle class="bgstar" cx="917" cy="461" r="0.9" opacity="0.22"/>
+<circle class="bgstar" cx="772" cy="28" r="1.4" opacity="0.55"/>
+<circle class="bgstar" cx="881" cy="520" r="0.6" opacity="0.56"/>
+<circle class="bgstar" cx="682" cy="520" r="0.5" opacity="0.52"/>
+<circle class="bgstar tw" style="--t:2.1s;--d:2.5s" cx="1071" cy="437" r="1.4" opacity="0.44"/>
+<circle class="bgstar" cx="1151" cy="241" r="0.9" opacity="0.4"/>
+<circle class="bgstar" cx="751" cy="436" r="0.9" opacity="0.27"/>
+<circle class="bgstar" cx="84" cy="597" r="1.1" opacity="0.19"/>
+<circle class="bgstar" cx="895" cy="303" r="0.5" opacity="0.53"/>
+<circle class="bgstar" cx="908" cy="148" r="1.4" opacity="0.59"/>
+<circle class="bgstar tw" style="--t:3.9s;--d:0.8s" cx="459" cy="307" r="1.4" opacity="0.28"/>
+<circle class="bgstar" cx="720" cy="212" r="1.4" opacity="0.48"/>
+<circle class="bgstar" cx="681" cy="8" r="0.5" opacity="0.37"/>
+<circle class="bgstar" cx="119" cy="139" r="0.9" opacity="0.28"/>
+<circle class="bgstar" cx="558" cy="298" r="0.5" opacity="0.6"/>
+<circle class="bgstar" cx="374" cy="55" r="0.9" opacity="0.16"/>
+<circle class="bgstar" cx="984" cy="620" r="0.9" opacity="0.6"/>
+<circle class="bgstar tw" style="--t:3.6s;--d:3.8s" cx="1100" cy="596" r="0.5" opacity="0.41"/>
+<circle class="bgstar tw" style="--t:3.1s;--d:2.0s" cx="159" cy="525" r="1.1" opacity="0.28"/>
+<circle class="bgstar" cx="1051" cy="252" r="0.6" opacity="0.15"/>
+<circle class="bgstar" cx="541" cy="193" r="0.6" opacity="0.34"/>
+<circle class="bgstar" cx="145" cy="212" r="0.8" opacity="0.49"/>
+<circle class="bgstar" cx="144" cy="593" r="1.4" opacity="0.16"/>
+<circle class="bgstar" cx="304" cy="42" r="0.9" opacity="0.6"/>
+<circle class="bgstar" cx="433" cy="274" r="0.8" opacity="0.53"/>
+<circle class="bgstar" cx="62" cy="424" r="1.4" opacity="0.57"/>
+<circle class="bgstar" cx="319" cy="327" r="0.6" opacity="0.5"/>
+<circle class="bgstar" cx="513" cy="19" r="1.4" opacity="0.33"/>
+<circle class="bgstar" cx="665" cy="130" r="0.5" opacity="0.17"/>
+<circle class="bgstar" cx="541" cy="482" r="1.4" opacity="0.54"/>
+<circle class="bgstar" cx="1094" cy="352" r="0.6" opacity="0.36"/>
+<circle class="bgstar" cx="357" cy="473" r="1.4" opacity="0.27"/>
+<circle class="bgstar" cx="361" cy="357" r="0.9" opacity="0.2"/>
+<circle class="bgstar" cx="90" cy="320" r="0.9" opacity="0.4"/>
+<circle class="bgstar" cx="399" cy="486" r="0.9" opacity="0.21"/>
+<circle class="bgstar" cx="109" cy="219" r="0.5" opacity="0.29"/>
+<circle class="bgstar" cx="971" cy="129" r="0.5" opacity="0.49"/>
+<circle class="bgstar" cx="497" cy="335" r="0.9" opacity="0.27"/>
+<circle class="bgstar" cx="598" cy="368" r="0.8" opacity="0.21"/>
+<circle class="bgstar" cx="756" cy="552" r="0.6" opacity="0.19"/>
+<circle class="bgstar" cx="461" cy="413" r="0.9" opacity="0.58"/>
+<circle class="bgstar" cx="1047" cy="14" r="0.5" opacity="0.34"/>
+<circle class="bgstar" cx="965" cy="620" r="0.9" opacity="0.15"/>
+<circle class="bgstar" cx="1112" cy="528" r="0.9" opacity="0.59"/>
+<circle class="bgstar tw" style="--t:4.5s;--d:2.8s" cx="131" cy="99" r="1.1" opacity="0.59"/>
+<circle class="bgstar tw" style="--t:4.3s;--d:0.9s" cx="1016" cy="573" r="0.5" opacity="0.4"/>
+<circle class="bgstar" cx="1104" cy="413" r="0.8" opacity="0.58"/>
+<circle class="bgstar" cx="634" cy="280" r="0.5" opacity="0.19"/>
+<circle class="bgstar" cx="1132" cy="123" r="0.8" opacity="0.25"/>
+<circle class="bgstar" cx="13" cy="193" r="0.9" opacity="0.28"/>
+<circle class="bgstar" cx="1007" cy="155" r="1.1" opacity="0.26"/>
+<circle class="bgstar" cx="1153" cy="451" r="0.8" opacity="0.17"/>
+<circle class="bgstar" cx="1062" cy="414" r="0.5" opacity="0.27"/>
+<circle class="bgstar" cx="1110" cy="145" r="0.5" opacity="0.46"/>
+<circle class="bgstar" cx="435" cy="254" r="0.5" opacity="0.51"/>
+<circle class="bgstar" cx="606" cy="131" r="0.6" opacity="0.29"/>
+<circle class="bgstar" cx="277" cy="142" r="0.8" opacity="0.2"/>
+<circle class="bgstar" cx="732" cy="574" r="0.9" opacity="0.34"/>
+<circle class="bgstar tw" style="--t:3.8s;--d:1.7s" cx="1139" cy="94" r="0.9" opacity="0.17"/>
+<circle class="bgstar" cx="852" cy="118" r="0.9" opacity="0.55"/>
+<circle class="bgstar" cx="879" cy="638" r="0.6" opacity="0.3"/>
+<circle class="bgstar" cx="1123" cy="478" r="0.5" opacity="0.29"/>
+<circle class="bgstar tw" style="--t:2.8s;--d:1.4s" cx="1007" cy="630" r="0.9" opacity="0.23"/>
+<circle class="bgstar" cx="1147" cy="79" r="0.6" opacity="0.32"/>
+<circle class="bgstar" cx="370" cy="515" r="0.5" opacity="0.17"/>
+<circle class="bgstar" cx="447" cy="588" r="0.6" opacity="0.3"/>
+<circle class="bgstar" cx="569" cy="404" r="0.6" opacity="0.52"/>
+<circle class="bgstar tw" style="--t:2.6s;--d:0.3s" cx="49" cy="22" r="0.5" opacity="0.51"/>
+<circle class="bgstar" cx="727" cy="232" r="0.8" opacity="0.58"/>
+<circle class="bgstar" cx="315" cy="459" r="0.8" opacity="0.57"/>
+<circle class="bgstar tw" style="--t:4.5s;--d:0.4s" cx="866" cy="381" r="1.4" opacity="0.58"/>
+<circle class="bgstar" cx="859" cy="298" r="0.9" opacity="0.51"/>
+<circle class="bgstar" cx="978" cy="85" r="0.9" opacity="0.23"/>
+<circle class="bgstar" cx="886" cy="527" r="0.6" opacity="0.42"/>
+<circle class="bgstar" cx="383" cy="232" r="1.1" opacity="0.19"/>
+<circle class="bgstar" cx="903" cy="158" r="0.5" opacity="0.44"/>
+<circle class="bgstar" cx="654" cy="103" r="0.9" opacity="0.55"/>
+<circle class="bgstar" cx="318" cy="54" r="0.5" opacity="0.34"/>
+<circle class="bgstar" cx="1167" cy="111" r="0.6" opacity="0.34"/>
+<circle class="bgstar" cx="809" cy="479" r="1.4" opacity="0.49"/>
+<circle class="bgstar" cx="353" cy="179" r="0.8" opacity="0.32"/>
+<circle class="bgstar" cx="239" cy="158" r="0.6" opacity="0.26"/>
+<g class="const">
+<text class="cname" x="150" y="140">The Builders · B2B</text>
+<polyline class="cline" points="170,215 360,140" fill="none"/>
+<g class="star" style="--t:3.4s;--d:0.5s;--p:2.7s">
+  <circle class="halo" cx="170" cy="215" r="15" fill="#7fd3ff"/>
+  <circle class="ring" cx="170" cy="215" r="9" stroke="#7fd3ff"/>
+  <path class="spike" d="M157 215H183M170 202V228" stroke="#7fd3ff" stroke-width="1"/>
+  <circle class="core" cx="170" cy="215" r="5" fill="#7fd3ff"/>
+  <text class="n" x="190" y="220">GSE Technologies</text>
+  <text class="s" x="190" y="239">Sustainable solutions</text>
+</g>
+<g class="star" style="--t:3.6s;--d:1.3s;--p:3.1s">
+  <circle class="halo" cx="360" cy="140" r="15" fill="#7fd3ff"/>
+  <circle class="ring" cx="360" cy="140" r="9" stroke="#7fd3ff"/>
+  <path class="spike" d="M347 140H373M360 127V153" stroke="#7fd3ff" stroke-width="1"/>
+  <circle class="core" cx="360" cy="140" r="4" fill="#7fd3ff"/>
+  <text class="n" x="380" y="145">Zenera Consulting</text>
+  <text class="s" x="380" y="164">Digital marketing & PR</text>
+</g>
+</g>
+<g class="const">
+<text class="cname" x="560" y="150">The Crowd-pleasers · B2C</text>
+<polyline class="cline" points="585,255 745,190 860,320" fill="none"/>
+<g class="star" style="--t:3.0s;--d:2.5s;--p:2.8s">
+  <circle class="halo" cx="585" cy="255" r="15" fill="#ff8a7a"/>
+  <circle class="ring" cx="585" cy="255" r="9" stroke="#ff8a7a"/>
+  <path class="spike" d="M572 255H598M585 242V268" stroke="#ff8a7a" stroke-width="1"/>
+  <circle class="core" cx="585" cy="255" r="5.5" fill="#ff8a7a"/>
+  <text class="n" x="605" y="260">AFA Sports</text>
+  <text class="s" x="605" y="279">Sports apparel</text>
+</g>
+<g class="star" style="--t:3.4s;--d:0.6s;--p:3.5s">
+  <circle class="halo" cx="745" cy="190" r="15" fill="#ff8a7a"/>
+  <circle class="ring" cx="745" cy="190" r="9" stroke="#ff8a7a"/>
+  <path class="spike" d="M732 190H758M745 177V203" stroke="#ff8a7a" stroke-width="1"/>
+  <circle class="core" cx="745" cy="190" r="5" fill="#ff8a7a"/>
+  <text class="n" x="765" y="195">FEELhub</text>
+  <text class="s" x="765" y="214">Tech</text>
+</g>
+<g class="star" style="--t:1.9s;--d:0.7s;--p:2.8s">
+  <circle class="halo" cx="860" cy="320" r="15" fill="#ff8a7a"/>
+  <circle class="ring" cx="860" cy="320" r="9" stroke="#ff8a7a"/>
+  <path class="spike" d="M847 320H873M860 307V333" stroke="#ff8a7a" stroke-width="1"/>
+  <circle class="core" cx="860" cy="320" r="4.5" fill="#ff8a7a"/>
+  <text class="n" x="880" y="325">Pure Aesthetics</text>
+  <text class="s" x="880" y="344">Beauty & wellness</text>
+</g>
+</g>
+<g class="const">
+<text class="cname" x="120" y="395">The Green Belt · Mission-driven</text>
+<polyline class="cline" points="150,450 400,545" fill="none"/>
+<g class="star" style="--t:2.9s;--d:2.1s;--p:3.0s">
+  <circle class="halo" cx="150" cy="450" r="15" fill="#9be37a"/>
+  <circle class="ring" cx="150" cy="450" r="9" stroke="#9be37a"/>
+  <path class="spike" d="M137 450H163M150 437V463" stroke="#9be37a" stroke-width="1"/>
+  <circle class="core" cx="150" cy="450" r="4" fill="#9be37a"/>
+  <text class="n" x="170" y="455">Green Vision Summit &amp; Expo</text>
+  <text class="s" x="170" y="474">Events · Sustainability</text>
+</g>
+<g class="star" style="--t:2.5s;--d:2.2s;--p:3.5s">
+  <circle class="halo" cx="400" cy="545" r="15" fill="#9be37a"/>
+  <circle class="ring" cx="400" cy="545" r="9" stroke="#9be37a"/>
+  <path class="spike" d="M387 545H413M400 532V558" stroke="#9be37a" stroke-width="1"/>
+  <circle class="core" cx="400" cy="545" r="5" fill="#9be37a"/>
+  <text class="n" x="420" y="550">ECO Village</text>
+  <text class="s" x="420" y="569">Sustainability</text>
+</g>
+</g>
+<g class="const">
+<text class="cname" x="640" y="445">The Institutions · Public sector</text>
+<polyline class="cline" points="665,500 900,575" fill="none"/>
+<g class="star" style="--t:3.2s;--d:1.7s;--p:2.6s">
+  <circle class="halo" cx="665" cy="500" r="15" fill="#ece5d8"/>
+  <circle class="ring" cx="665" cy="500" r="9" stroke="#ece5d8"/>
+  <path class="spike" d="M652 500H678M665 487V513" stroke="#ece5d8" stroke-width="1"/>
+  <circle class="core" cx="665" cy="500" r="5" fill="#ece5d8"/>
+  <text class="n" x="685" y="505">Institute of Tourism Studies</text>
+  <text class="s" x="685" y="524">Education</text>
+</g>
+<g class="star" style="--t:2.2s;--d:0.9s;--p:2.9s">
+  <circle class="halo" cx="900" cy="575" r="15" fill="#ece5d8"/>
+  <circle class="ring" cx="900" cy="575" r="9" stroke="#ece5d8"/>
+  <path class="spike" d="M887 575H913M900 562V588" stroke="#ece5d8" stroke-width="1"/>
+  <circle class="core" cx="900" cy="575" r="4.5" fill="#ece5d8"/>
+  <text class="n" x="920" y="580">Delta Print &amp; Publishing</text>
+  <text class="s" x="920" y="599">Print media</text>
+</g>
+</g>
+<g class="const">
+<text class="cname" x="1000" y="95">The Wildcard · Creative</text>
+<g class="star" style="--t:3.6s;--d:0.1s;--p:4.1s">
+  <circle class="halo" cx="1095" cy="165" r="15" fill="#f5a524"/>
+  <circle class="ring" cx="1095" cy="165" r="9" stroke="#f5a524"/>
+  <path class="spike" d="M1082 165H1108M1095 152V178" stroke="#f5a524" stroke-width="1"/>
+  <circle class="core" cx="1095" cy="165" r="4.5" fill="#f5a524"/>
+  <text class="n" x="1075" y="170" text-anchor="end">Loonytainment</text>
+  <text class="s" x="1075" y="189" text-anchor="end">Creative</text>
+</g>
+</g>
+</svg>
+          </div>
+          <div class="sky-legend"><span class="slug">Night sky over Malta &amp; Nigeria &middot; <b>10 clients</b></span><span class="slug sky-hint">Swipe the sky</span></div>
         </div>
       </div>
     </section>
 
-    <div class="contact-strip">
-      <div class="cs-bg" style="background-image:url('texture-stone.jpg');"></div>
-      <h2>Shall we <em>get started?</em></h2>
-      <a class="email" href="mailto:janieogeah@gmail.com">janieogeah@gmail.com</a>
-    </div>
+    <section class="contact rule">
+      <div class="wrap">
+        <h2 class="display sm" data-reveal>Shall we get started<span class="amber">?</span></h2>
+        <p class="sub" data-reveal>Tell me the problem. I&rsquo;ll bring the question you haven&rsquo;t asked yet.</p>
+        <a class="email" href="mailto:janieogeah@gmail.com" data-reveal>janieogeah@gmail.com</a>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Janie Ogeah · <a href="https://lucidumvisions.com" style="color:inherit">Lucidum Visions</a></p>
-    <ul class="footer-links">
+    <p>&copy; 2026 Janie Ogeah &middot; <a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Lucidum Visions</a></p>
+    <ul>
+      <li><a href="film.html">Films</a></li>
+      <li><a href="portfolio.html">Work</a></li>
       <li><a href="about.html">Bio</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="film.html">Film</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="blog.html">Words</a></li>
+      <li><a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
   </footer>
-
-  <script>
-    function toggleNav() { document.getElementById('nav').classList.toggle('open'); }
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
-    });
-  </script>
 </body>
 </html>

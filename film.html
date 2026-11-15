@@ -3,199 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Film — Janie Ogeah / Lucidum Visions</title>
-  <meta name="description" content="Narrative films, shorts and commercial work by Janie Ogeah — Lucidum Visions." />
+  <title>Films | Janie Ogeah &middot; Lucidum Visions</title>
+  <meta name="description" content="Short films written, directed and produced by Janie Ogeah under Lucidum Visions. Dread, history and futures we didn&rsquo;t order." />
   <link rel="stylesheet" href="style.css" />
   <script src="motion.js" defer></script>
 </head>
 <body>
   <nav class="nav" id="nav">
-    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home">
-      <img src="atJanie_logo.svg" alt="JO – Janie Ogeah" />
-    </a>
+    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home"><img src="atJanie_logo_tight.svg" alt="JO, Janie Ogeah" /></a>
     <ul class="nav-links">
+      <li><a href="film.html" class="active">Films</a></li>
+      <li><a href="portfolio.html">Work</a></li>
       <li><a href="about.html">Bio</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="film.html" class="active">Film</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="blog.html">Words</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
+  <p class="side-caption">Lucidum Visions &middot; The slate</p>
 
   <main>
-    <!-- Cinematic hero quote — full bleed -->
-    <div class="film-hero-quote">
-      <img class="hq-bg" src="film-bts-4.jpg" alt="" aria-hidden="true" />
-      <div>
-        Feel first, think later,<br/>and see the world <em>a little sideways.</em>
-      </div>
-    </div>
+    <header class="banner">
+      <div class="bg" style="background-image:url('film-bts-4.jpg');"></div>
+      <p class="slug">Lucidum Visions &middot; <b>Films</b></p>
+      <h1 class="display">The slate<span class="amber">.</span></h1>
+      <p class="lede">Lucidum Visions is the banner my films live under. Everything here was written, directed or produced by me, often all three. Each one started as a question I couldn&rsquo;t put down.</p>
+    </header>
 
-    <!-- Lucidum Visions intro -->
-    <section style="padding:4rem 5% 5rem; border-bottom:1px solid var(--border);">
-      <p class="section-label">Lucidum Visions</p>
-      <p style="font-size:1.05rem;color:var(--text);opacity:0.85;max-width:680px;line-height:1.8;">
-        A playground, a creative portfolio, and an extension of Janie Ogeah's canvas for devotedly captivating and engaging content. The works featured here have been written, directed, or produced by Janie, often all three.
-      </p>
-    </section>
-
-    <!-- Films — order: OTF · Who Killed the Laughter · Black Feeling · Human in the Machine -->
     <section>
-      <p class="section-label">Narrative Films</p>
-      <h2 class="section-title">The <em>works</em></h2>
-      <div class="films-grid">
+      <div class="wrap">
 
-        <!-- The Thing That Came Back -->
-        <div class="film-card">
-          <div class="film-card-poster-wrap">
-            <img src="image.png" alt="The Thing That Came Back poster"
-              class="film-card-poster"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-            <div class="film-poster-placeholder" style="display:none;">
-              <span class="fp-label">Short Film</span>
-              <span class="fp-title">The Thing<br/>That Came Back</span>
-              <span class="fp-year">2026</span>
-            </div>
-          </div>
-          <div class="film-card-info">
-            <div class="film-year">2026</div>
+        <article class="film" id="ttcb" data-reveal>
+          <div class="film-poster"><img src="image.png" alt="The Thing That Came Back poster" /></div>
+          <div>
+            <p class="slug">Short &middot; 2026 &middot; <b>Coming soon</b></p>
+            <p class="whatif">What if the last call on the night shift <b>wasn&rsquo;t human?</b></p>
             <h3>The Thing That Came Back</h3>
-            <p>The last call on a night shift goes south as two police officers end up on a chase for something neither of them could explain.</p>
-            <p class="film-credits">Written, Produced &amp; Directed by Janie Ogeah</p>
-            <p class="film-credits">Coming soon</p>
+            <p class="logline">The last call on a night shift goes south as two police officers end up on a chase for something neither of them could explain.</p>
+            <p class="credit">Written, directed &amp; produced by Janie Ogeah</p>
           </div>
-        </div>
+        </article>
 
-        <!-- Off The Face -->
-        <div class="film-card">
-          <div class="film-card-poster-wrap">
-            <img src="OTF_poster004.jpg" alt="Off The Face poster"
-              class="film-card-poster"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-            <div class="film-poster-placeholder" style="display:none;">
-              <span class="fp-label">Short Film</span>
-              <span class="fp-title">Off The<br/>Face</span>
-              <span class="fp-year">2026</span>
-            </div>
-          </div>
-          <div class="film-card-info">
-            <div class="film-year">2026</div>
+        <article class="film" id="otf" data-reveal>
+          <div class="film-poster"><img src="OTF_poster004.jpg" alt="Off The Face poster" loading="lazy" /></div>
+          <div>
+            <p class="slug">Short &middot; 2026</p>
+            <p class="whatif">What if the biggest threat to your film <b>is your own producer?</b></p>
             <h3>Off The Face</h3>
-            <p>On the first day of rehearsal, a Nigerian writer-director must fight to tell her authentic story when her co-producer's ego threatens to blow up the entire production.</p>
-            <p class="film-credits">Co-written and Co-produced by Janie Ogeah</p>
-            <a href="https://www.imdb.com/title/tt41189997/?ref_=nm_knf_t_4" target="_blank" rel="noopener" class="film-link">View on IMDB ↗</a>
+            <p class="logline">On the first day of rehearsal, a Nigerian writer-director must fight to tell her authentic story when her co-producer&rsquo;s ego threatens to blow up the entire production.</p>
+            <p class="credit">Co-written &amp; co-produced by Janie Ogeah</p>
+            <a href="https://www.imdb.com/title/tt41189997/" target="_blank" rel="noopener" class="link">View on IMDb</a>
           </div>
-        </div>
+        </article>
 
-        <!-- Who Killed the Laughter -->
-        <div class="film-card">
-          <div class="film-card-poster-wrap">
-            <img src="who_killed_the_laughter_poster.jpeg" alt="Who Killed the Laughter poster"
-              class="film-card-poster"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-            <div class="film-poster-placeholder" style="display:none;">
-              <span class="fp-label">Short Film</span>
-              <span class="fp-title">Who Killed<br/>the Laughter</span>
-              <span class="fp-year">2025</span>
-            </div>
-          </div>
-          <div class="film-card-info">
-            <div class="film-year">2025</div>
-            <h3>Who Killed the Laughter</h3>
-            <p>When a defiant prisoner uses humour to expose the cracks in a country's authoritarian rule, the humourless prime minister facing the unexpected rebellion must try harder to keep his humanity suppressed.</p>
-            <p class="film-credits">Written by Janie Ogeah</p>
-            <a href="https://www.imdb.com/title/tt36594357/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Who%20Killed%20the%20Laughter" target="_blank" rel="noopener" class="film-link">View on IMDB ↗</a>
-          </div>
-        </div>
-
-        <!-- Black Feeling -->
-        <div class="film-card">
-          <div class="film-card-poster-wrap">
-            <img src="Black_feeling_poster.jpeg" alt="Black Feeling (2025) poster"
-              class="film-card-poster"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-            <div class="film-poster-placeholder" style="display:none;">
-              <span class="fp-label">Short Film</span>
-              <span class="fp-title">Black<br/>Feeling</span>
-              <span class="fp-year">2025</span>
-            </div>
-          </div>
-          <div class="film-card-info">
-            <div class="film-year">2025</div>
+        <article class="film" id="bf" data-reveal>
+          <div class="film-poster"><img src="Black_feeling_poster.jpeg" alt="Black Feeling poster" loading="lazy" /></div>
+          <div>
+            <p class="slug">Short &middot; 2025 &middot; <b>Narrative debut</b></p>
+            <p class="whatif">What if the thing hunting you <b>lives inside your head?</b></p>
             <h3>Black Feeling</h3>
-            <p>The situation takes a dark turn when trauma and paranoia force Kamsi to confront her deepest fears and seek help before she loses control of her actions.</p>
-            <p class="film-credits">Written, Directed &amp; Produced by Janie Ogeah</p>
-            <a href="https://www.imdb.com/title/tt37145256/?ref_=mv_close" target="_blank" rel="noopener" class="film-link">View on IMDB ↗</a>
+            <p class="logline">The situation takes a dark turn when trauma and paranoia force Kamsi to confront her deepest fears and seek help before she loses control of her actions.</p>
+            <p class="credit">Written, directed &amp; produced by Janie Ogeah</p>
+            <a href="https://www.imdb.com/title/tt37145256/" target="_blank" rel="noopener" class="link">View on IMDb</a>
           </div>
-        </div>
+        </article>
 
-        <!-- Human in the Machine -->
-        <div class="film-card">
-          <div class="film-card-poster-wrap">
-            <img src="Human_in_the_machine_poster.jpeg" alt="Human in the Machine poster"
-              class="film-card-poster"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-            <div class="film-poster-placeholder" style="display:none;">
-              <span class="fp-label">Short Film</span>
-              <span class="fp-title">Human in<br/>the Machine</span>
-              <span class="fp-year">2024</span>
-            </div>
+        <article class="film" id="wktl" data-reveal>
+          <div class="film-poster"><img src="who_killed_the_laughter_poster.jpeg" alt="Who Killed the Laughter poster" loading="lazy" /></div>
+          <div>
+            <p class="slug">Short &middot; 2025</p>
+            <p class="whatif">What if a joke was <b>the most dangerous thing in the country?</b></p>
+            <h3>Who Killed the Laughter</h3>
+            <p class="logline">When a defiant prisoner uses humour to expose the cracks in a country&rsquo;s authoritarian rule, the humourless prime minister facing the unexpected rebellion must try harder to keep his humanity suppressed.</p>
+            <p class="credit">Written by Janie Ogeah</p>
+            <a href="https://www.imdb.com/title/tt36594357/" target="_blank" rel="noopener" class="link">View on IMDb</a>
           </div>
-          <div class="film-card-info">
-            <div class="film-year">2024</div>
+        </article>
+
+        <article class="film" id="hitm" data-reveal>
+          <div class="film-poster"><img src="Human_in_the_machine_poster.jpeg" alt="Human in the Machine poster" loading="lazy" /></div>
+          <div>
+            <p class="slug">Short &middot; 2024</p>
+            <p class="whatif">What if the one who finally listens <b>is a machine in the park?</b></p>
             <h3>Human in the Machine</h3>
-            <p>A lonely woman bonds with a strange device in the park, only to realise she is seeking the wrong connection.</p>
-            <p class="film-credits">Written, Directed &amp; Produced by Janie Ogeah</p>
-            <a href="https://www.imdb.com/title/tt33318687/?ref_=mv_close" target="_blank" rel="noopener" class="film-link">View on IMDB ↗</a>
+            <p class="logline">A lonely woman bonds with a strange device in the park, only to realise she is seeking the wrong connection.</p>
+            <p class="credit">Written, directed &amp; produced by Janie Ogeah</p>
+            <a href="https://www.imdb.com/title/tt33318687/" target="_blank" rel="noopener" class="link">View on IMDb</a>
           </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="rule">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="display" data-reveal>On set<span class="amber">.</span></h2>
+          <p data-reveal>Night shoots, boom poles and the people who make the what-ifs real.</p>
         </div>
-
+        <figure class="reel" data-reveal>
+          <video controls playsinline preload="metadata" poster="onset-reel.jpg">
+            <source src="onset-reel.mp4" type="video/mp4" />
+          </video>
+          <figcaption class="slug">On set &middot; GoPro &middot; 97 seconds of controlled chaos</figcaption>
+        </figure>
+        <div class="bts" data-reveal>
+          <img src="film-bts-2.jpg" alt="Crew with boom mic on set" loading="lazy" />
+          <img src="film-bts-1.jpg" alt="Directing on set" loading="lazy" />
+          <img src="film-bts-3.jpg" alt="Camera crew" loading="lazy" />
+          <img src="film-bts-4.jpg" alt="Night shoot for Black Feeling" loading="lazy" />
+        </div>
       </div>
     </section>
 
-    <!-- BTS / On Set -->
-    <section class="alt">
-      <p class="section-label">On Set</p>
-      <h2 class="section-title">Behind the <em>scenes</em></h2>
-      <div class="bts-grid">
-        <img src="film-bts-4.jpg" alt="Night shoot" loading="lazy" />
-        <img src="film-bts-1.jpg" alt="On set" loading="lazy" />
-        <img src="film-bts-2.jpg" alt="Crew with boom mic" loading="lazy" />
-        <img src="film-bts-3.jpg" alt="Camera crew" loading="lazy" />
+    <div class="photo-band quote-only">
+      <div class="bg" style="background-image:url('photo-arches.jpg');"></div>
+      <p class="line" data-reveal>Cinema is lying <span class="amber">in service of the truth.</span></p>
+    </div>
+
+    <div class="photo-band">
+      <div class="bg" style="background-image:url('film-bts-3.jpg');"></div>
+      <p class="slug" data-reveal>Lucidum Visions</p>
+      <h2 class="display" data-reveal style="margin-top:1rem;">Watch the next one get made<span class="amber">.</span></h2>
+      <p data-reveal>Development, shoots and the sideways questions behind them, as they happen.</p>
+      <div class="btn-row" data-reveal>
+        <a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener" class="btn">Follow @lucidumvisions</a>
+      </div>
+    </div>
+
+    <section class="contact">
+      <div class="wrap">
+        <h2 class="display sm" data-reveal>Meaning, motion, madness or magic<span class="amber">?</span></h2>
+        <p class="sub" data-reveal>Crew, cast, co-producers and funders: I&rsquo;d like to hear from you.</p>
+        <a class="email" href="mailto:janieogeah@gmail.com" data-reveal>janieogeah@gmail.com</a>
       </div>
     </section>
-
-    <!-- Quote band -->
-    <div class="quote-band">
-      <div class="band-bg" style="background-image:url('photo-arches.jpg');"></div>
-      <p>Cinema is lying <em>in service of the truth.</em></p>
-    </div>
-
-    <div class="contact-strip">
-      <div class="cs-bg" style="background-image:url('texture-stone.jpg');"></div>
-      <h2>Want meaning, motion,<br/><em>madness, or magic?</em></h2>
-      <h3>Get in touch</h3>
-      <a class="email" href="mailto:janieogeah@gmail.com">janieogeah@gmail.com</a>
-    </div>
   </main>
 
   <footer>
-    <p>&copy; 2026 Janie Ogeah · <a href="https://lucidumvisions.com" style="color:inherit">Lucidum Visions</a></p>
-    <ul class="footer-links">
+    <p>&copy; 2026 Janie Ogeah &middot; <a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Lucidum Visions</a></p>
+    <ul>
+      <li><a href="film.html">Films</a></li>
+      <li><a href="portfolio.html">Work</a></li>
       <li><a href="about.html">Bio</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="film.html">Film</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <li><a href="blog.html">Words</a></li>
+      <li><a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
   </footer>
-
-  <script>
-    function toggleNav() { document.getElementById('nav').classList.toggle('open'); }
-    document.querySelectorAll('.nav-links a').forEach(a => {
-      a.addEventListener('click', () => document.getElementById('nav').classList.remove('open'));
-    });
-  </script>
 </body>
 </html>
