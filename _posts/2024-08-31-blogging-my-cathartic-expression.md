@@ -1,7 +1,7 @@
 ---
 title: "Blogging: My cathartic expression"
 date: 2024-08-31
-cover: /assets/blog/blogging-my-cathartic-expression-cover.jpg
+cover: /assets/blog/IMG_3202 (convert.io).png
 excerpt: Anyone who has ever shared a bed with me calls me a nocturnal creature.
   The night is when my thoughts begin to marinate. I may lie still for hours,
   giving the illusion of deep sleep, but in truth, I’m having intense,…
