@@ -1,14 +1,15 @@
 ---
-title: "Where do AI and creativity meet?"
+title: Where do AI and creativity meet?
 date: 2024-12-13
-cover: /assets/blog/where-do-ai-and-creativity-meet-cover.jpg
-excerpt: "Early this week, someone asked me the above question.My response? ‘In the middle’. But later I thought, “Yikes! Do I really believe that?”Then yesterday, I saw a 2023 Euronews interview with British-Indian sculptor Sir…"
+cover: /assets/blog/AI and creativity.jpg
+excerpt: Early this week, someone asked me the above question.My response? ‘In
+  the middle’. But later I thought, “Yikes! Do I really believe that?”Then
+  yesterday, I saw a 2023 Euronews interview with British-Indian sculptor Sir…
 ---
-
 Early this week, someone asked me the above question.  
 My response? ‘In the middle’. But later I thought, “Yikes! Do I really believe that?”  
 Then yesterday, I saw a 2023 [Euronews](https://www.euronews.com/culture/2023/10/25/anish-kapoor-on-vantablack-ownership-artificial-intelligence-and-making-love-with-the-scre) interview with British-Indian sculptor Sir Anish Kapoor where he shared his reservations about AI’s role in creativity. So it got me pondering my response and here’s why I believe ‘in the middle’ is exactly where they meet.  
-  
+
 Despite ongoing debate about humans soon outliving their usefulness in the workplace while AI takes over, I do not suppose putting AI to work is tantamount to humans ‘going to sleep’. It’s like the Harvard Business School Professor, Karim R. Lakhani said; [‘AI won’t replace humans, but humans with AI will replace those without’.](https://hbr.org/2023/08/ai-wont-replace-humans-but-humans-with-ai-will-replace-humans-without-ai)  
 Embracing the potential of AI is more likely to boost creativity rather than hinder it.  
 Sir Kapoor posed a deeply thought-provoking question: ‘Is there a way for AI to invent something new?’ Reflecting on the idea that creativity, be it cultural or artistic, has always been an individual endeavour, he said, “It’s the individual’s reflection on their own inner-being and the world out there that is the key question.”  
