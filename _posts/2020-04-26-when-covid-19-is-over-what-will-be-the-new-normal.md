@@ -1,10 +1,11 @@
 ---
-title: "When COVID-19 is over, what will be the new ‘normal’?"
+title: When COVID-19 is over, what will be the new ‘normal’?
 date: 2020-04-26
 cover: /assets/blog/when-covid-19-is-over-what-will-be-the-new-normal-cover.jpg
-excerpt: "Before the first world war came, the people were content, or so they thought. They had most if not all they needed to survive, it was not readily known if something or a certain lifestyle was missing, everything was…"
+excerpt: Before the first world war came, the people were content, or so they
+  thought. They had most if not all they needed to survive, it was not readily
+  known if something or a certain lifestyle was missing, everything was…
 ---
-
 Before the first world war came, the people were content, or so they thought. They had most if not all they needed to survive, it was not readily known if something or a certain lifestyle was missing, everything was ‘normal’. But when the guns fell silent and the war came to its end, the world changed, eyes were opened to several deficiencies and a void stood blatantly before them.
 
 To fill the emptiness, first, new technologies were developed – airplanes were made stronger, quicker and sophisticated; U-boats invented, new methods of communication developed, photography ameliorated, and cars improved.
