@@ -1,5 +1,5 @@
 ---
-title: Being a Busybody (LOL)
+title: Being a Busybody
 date: 2025-03-14
 cover: /assets/blog/being-a-busybody-lol-cover.jpg
 excerpt: I’m that kind of girl who bumps into a stranger and spends way too much
