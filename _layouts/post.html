@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | Janie Ogeah</title>
+  {% assign summary = page.excerpt | strip_html | normalize_whitespace | truncate: 160 %}
+  <meta name="description" content="{{ summary | escape }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ page.title | escape }}" />
+  <meta property="og:description" content="{{ summary | escape }}" />
+  {% if page.cover %}<meta property="og:image" content="{{ site.url }}{{ page.cover }}" />{% endif %}
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/motion.js" defer></script>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="/index.html" class="nav-logo" aria-label="Janie Ogeah home"><img src="/atJanie_logo_tight.svg" alt="JO, Janie Ogeah" /></a>
+    <ul class="nav-links">
+      <li><a href="/film.html">Films</a></li>
+      <li><a href="/portfolio.html">Work</a></li>
+      <li><a href="/about.html">Bio</a></li>
+      <li><a href="/blog.html" class="active">Words</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+  <p class="side-caption">Janie Ogeah &middot; Words</p>
+
+  <main>
+    {% assign words = content | number_of_words %}
+    {% assign minutes = words | divided_by: 200 | plus: 1 %}
+    <header class="banner post-banner">
+      {% if page.cover %}<div class="bg" style="background-image:url('{{ page.cover }}');"></div>{% endif %}
+      <p class="slug"><a href="/blog.html#posts">Words</a> &middot; {{ page.date | date: "%-d %B %Y" }} &middot; <b>{{ minutes }} min read</b></p>
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+
+    <article class="prose" data-reveal>
+      {{ content }}
+    </article>
+
+    {% if site.cusdis_app_id != "" %}
+    <section class="post-comments">
+      <div class="wrap-narrow">
+        <h2 class="display sm">Say something<span class="amber">.</span></h2>
+        <div id="cusdis_thread"
+          data-host="https://cusdis.com"
+          data-app-id="{{ site.cusdis_app_id }}"
+          data-page-id="{{ page.id }}"
+          data-page-url="{{ site.url }}{{ page.url }}"
+          data-page-title="{{ page.title | escape }}"
+          data-theme="dark"></div>
+        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+      </div>
+    </section>
+    {% endif %}
+
+    <nav class="post-nav">
+      {% if page.previous %}<a href="{{ page.previous.url }}"><span class="slug">Older</span><b>{{ page.previous.title }}</b></a>{% else %}<span></span>{% endif %}
+      {% if page.next %}<a href="{{ page.next.url }}" class="next"><span class="slug">Newer</span><b>{{ page.next.title }}</b></a>{% endif %}
+    </nav>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Janie Ogeah &middot; <a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Lucidum Visions</a></p>
+    <ul>
+      <li><a href="/film.html">Films</a></li>
+      <li><a href="/portfolio.html">Work</a></li>
+      <li><a href="/about.html">Bio</a></li>
+      <li><a href="/blog.html">Words</a></li>
+      <li><a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
