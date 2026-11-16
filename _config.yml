@@ -1,0 +1,20 @@
+title: Janie Ogeah
+description: Writer, director and creative strategist in Malta.
+url: https://atjanie.com
+permalink: /words/:title/
+markdown: kramdown
+timezone: Europe/Malta
+
+# Comments: paste your Cusdis App ID between the quotes to switch comments on.
+cusdis_app_id: ""
+
+exclude:
+  - README.md
+  - .pages.yml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

@@ -1,3 +1,6 @@
+---
+permalink: /blog.html
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,23 +31,44 @@
       <h1 class="display">Words<span class="amber">.</span></h1>
       <p class="lede">Sometimes I shut my mouth and let my fingers do the talking.</p>
       <div class="btn-row" style="margin-top:2rem;">
-        <a href="https://okblog5.wordpress.com" target="_blank" rel="noopener" class="btn">Read the blog</a>
+        <a href="#posts" class="btn">Read the blog</a>
       </div>
     </header>
 
-    <section>
+    <section id="posts">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="display" data-reveal>The blog<span class="amber">.</span></h2>
+          <p data-reveal>Essays, observations and the occasional poem.</p>
+        </div>
+        <div class="post-grid" data-reveal-kids>
+          {% for post in site.posts %}
+          <a class="post-card{% if forloop.first %} lead{% endif %}" href="{{ post.url }}">
+            <div class="img"{% if post.cover %} style="background-image:url('{{ post.cover }}');"{% endif %}></div>
+            <div class="post-card-body">
+              <span class="slug">{{ post.date | date: "%-d %b %Y" }}</span>
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 28 }}</p>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="rule">
       <div class="wrap">
         <div class="section-head">
           <h2 class="display" data-reveal>The Magic Words<span class="amber">.</span></h2>
           <p data-reveal>Articles, brand copy and research for clients across tech, sustainability and more.</p>
         </div>
         <div class="mosaic" data-reveal-kids>
-          <a class="tile t1" href="https://okblog5.wordpress.com" target="_blank" rel="noopener">
+          <a class="tile t1" href="#posts">
             <div class="img" style="background-image:url('words-typewriter.jpg');"></div>
             <span class="slug">Personal &middot; Opinion</span>
             <h3>Essays &amp; observations</h3>
             <p>Longer writing, cultural commentary and the occasional rant on creativity, film and making sense of the world.</p>
-            <span class="go">Read on WordPress</span>
+            <span class="go">Read the blog</span>
           </a>
           <a class="tile t2" href="https://gvsummitexpo.com/blog/" target="_blank" rel="noopener">
             <div class="img" style="background-image:url('words-turbine.jpg');"></div>
