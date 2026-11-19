@@ -13,6 +13,7 @@
   {% if page.cover %}<meta property="og:image" content="{{ site.url }}{{ page.cover }}" />{% endif %}
   <link rel="stylesheet" href="/style.css" />
   <script src="/motion.js" defer></script>
+  <script data-goatcounter="https://atjanie.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
   <nav class="nav" id="nav">
@@ -39,6 +40,72 @@
     <article class="prose" data-reveal>
       {{ content }}
     </article>
+
+    <section class="post-react" data-post="{{ page.url }}">
+      <div class="wrap-narrow">
+        <p class="slug">Did this land?</p>
+        <div class="reactions" role="group" aria-label="React to this post">
+          <button type="button" data-r="felt-that"><span>❤️</span>Felt that</button>
+          <button type="button" data-r="made-me-think"><span>🤔</span>Made me think</button>
+          <button type="button" data-r="mind-blown"><span>🤯</span>Mind blown</button>
+          <button type="button" data-r="laughed"><span>😂</span>Laughed</button>
+          <button type="button" data-r="not-for-me"><span>🤷🏾‍♀️</span>Not for me</button>
+        </div>
+        <p class="react-thanks" hidden>Noted. Thank you.</p>
+        <p class="react-thanks react-why" hidden>Fair enough. Tell me why <a href="https://ig.me/m/lucidumvisions" target="_blank" rel="noopener">on Instagram</a> or <a href="mailto:lucidumvisions@gmail.com?subject={{ 'Re: ' | append: page.title | url_encode }}">by email</a>; I read everything.</p>
+
+        <p class="slug" style="margin-top:2.5rem;">Pass it on</p>
+        {% capture share_url %}{{ site.url }}{{ page.url }}{% endcapture %}
+        <div class="shares">
+          <button type="button" class="share-native" data-s="native" hidden>Share</button>
+          <a data-s="whatsapp" href="https://wa.me/?text={{ page.title | append: ' ' | append: share_url | url_encode }}" target="_blank" rel="noopener">WhatsApp</a>
+          <a data-s="linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | url_encode }}" target="_blank" rel="noopener">LinkedIn</a>
+          <a data-s="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url | url_encode }}" target="_blank" rel="noopener">Facebook</a>
+          <a data-s="x" href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&amp;url={{ share_url | url_encode }}" target="_blank" rel="noopener">X</a>
+          <button type="button" data-s="copy">Copy link</button>
+        </div>
+        <p class="reply-line">Or reply directly: <a data-s="reply-instagram" href="https://ig.me/m/lucidumvisions" target="_blank" rel="noopener">on Instagram</a> or <a data-s="reply-email" href="mailto:lucidumvisions@gmail.com?subject={{ 'Re: ' | append: page.title | url_encode }}">by email</a>.</p>
+      </div>
+    </section>
+    <script>
+    (function () {
+      var box = document.querySelector('.post-react'); if (!box) return;
+      var slug = box.getAttribute('data-post').replace(/^\/|\/$/g, '').replace(/\//g, '-');
+      var title = document.title;
+      function count(name) {
+        try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: name + '/' + slug, title: title, event: true }); } catch (e) {}
+      }
+      var key = 'reacted:' + slug, done = null;
+      try { done = localStorage.getItem(key); } catch (e) {}
+      var btns = box.querySelectorAll('.reactions button'), thanks = box.querySelector('.react-thanks');
+      function lock(r) {
+        btns.forEach(function (b) { b.disabled = true; if (b.getAttribute('data-r') === r) b.classList.add('chosen'); });
+        if (r === 'not-for-me') box.querySelector('.react-why').hidden = false; else thanks.hidden = false;
+      }
+      if (done) lock(done);
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var r = b.getAttribute('data-r'); count('react-' + r); lock(r);
+          try { localStorage.setItem(key, r); } catch (e) {}
+        });
+      });
+      var nat = box.querySelector('.share-native');
+      if (navigator.share) {
+        nat.hidden = false;
+        nat.addEventListener('click', function () {
+          navigator.share({ title: title, url: location.href }).then(function () { count('share-native'); }).catch(function () {});
+        });
+      }
+      box.querySelectorAll('.shares a, .reply-line a').forEach(function (a) {
+        a.addEventListener('click', function () { count('share-' + a.getAttribute('data-s')); });
+      });
+      var cp = box.querySelector('[data-s="copy"]');
+      cp.addEventListener('click', function () {
+        var done = function () { cp.textContent = 'Copied'; setTimeout(function () { cp.textContent = 'Copy link'; }, 2000); count('share-copy'); };
+        try { navigator.clipboard.writeText(location.href).then(done, function () {}); } catch (e) {}
+      });
+    })();
+    </script>
 
     {% if site.cusdis_app_id != "" %}
     <section class="post-comments">

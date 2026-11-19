@@ -537,3 +537,21 @@ footer a:hover { color: var(--amber); }
   .post-card.lead { grid-column: auto; grid-row: auto; }
   .post-card.lead .img { aspect-ratio: 16/10; min-height: 0; }
 }
+
+/* reactions + shares */
+.post-react { border-top: 1px solid var(--line); padding: clamp(2.5rem, 5vw, 3.5rem) var(--pad); }
+.reactions, .shares { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .9rem; }
+.reactions button, .shares a, .shares button {
+  font-family: var(--slug); font-size: .82rem; text-transform: uppercase; letter-spacing: .05em;
+  color: var(--bone); background: var(--bg-2); border: 1px solid var(--line); border-radius: 999px;
+  padding: .65rem 1.05rem; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: .5rem;
+  transition: border-color .2s, color .2s, background .2s;
+}
+.reactions button span { font-size: 1.15rem; line-height: 1; }
+.reactions button:hover:not(:disabled), .shares a:hover, .shares button:hover { border-color: var(--amber); color: var(--amber); }
+.reactions button:disabled { cursor: default; opacity: .45; }
+.reactions button.chosen { opacity: 1; border-color: var(--amber); background: rgba(245,165,36,.12); }
+.shares .share-native { background: var(--amber); color: var(--amber-ink); border-color: var(--amber); }
+.react-thanks { margin-top: .8rem; font-family: var(--slug); font-size: .85rem; color: var(--amber); }
+.reply-line { margin-top: 1.5rem; color: var(--muted); }
+.reply-line a { color: var(--amber); }
