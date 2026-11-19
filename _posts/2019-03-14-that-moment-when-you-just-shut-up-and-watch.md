@@ -2,9 +2,6 @@
 title: That moment when you just shut up and watch
 date: 2019-03-14
 cover: /assets/blog/that-moment-when-you-just-shut-up-and-watch-cover.jpg
-excerpt: It was a Saturday afternoon, and I had sprawled on my bed, ready to
-  bask in the exhilaration of a day off from the usual hustle and bustle of
-  making a living. As I settled in front of the television to watch my…
 ---
 It was a Saturday afternoon, and I had sprawled on my bed, ready to bask in the exhilaration of a day off from the usual hustle and bustle of making a living. As I settled in front of the television to watch my favourite medical series, “Grey’s Anatomy,” the unreliable managers of Nigerian electricity cut off the power. Grumbling amidst high hopes of getting the power back soon, my impatience got the better of me, and I hurried to the nearest fueling station to get fuel for the generator.
 

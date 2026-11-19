@@ -2,9 +2,6 @@
 title: I miss my Africa
 date: 2024-06-04
 cover: /assets/blog/we-should-all-be-africans-cover.jpg
-excerpt: Africans have long had a deep connection and respect for the natural
-  world. I come from a Nigerian family that takes pride in doing everything from
-  scratch. My grandma, mom, and uncle have always been…
 ---
 Africans have long had a deep connection and respect for the natural world. 
 

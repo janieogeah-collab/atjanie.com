@@ -2,9 +2,6 @@
 title: Being a Busybody
 date: 2025-03-14
 cover: /assets/blog/being-a-busybody-lol-cover.jpg
-excerpt: I’m that kind of girl who bumps into a stranger and spends way too much
-  time creating elaborate backstories for them. Thoughts like, ” He’s definitely
-  coming from a carnival, look at his shoes”, always pop into my head.…
 ---
 *WordPress Prompt: What activities do you lose yourself in?*
 

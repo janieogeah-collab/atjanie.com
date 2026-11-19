@@ -2,9 +2,6 @@
 title: The Streets of Malta
 date: 2024-08-17
 cover: /assets/blog/the-streets-of-malta-cover.jpg
-excerpt: Quarantine lifted, I set my sights on Xġhajra, Feet brushing the
-  pavement, finally feeling free. Slow steps on cool tiles, a pace I couldn’t
-  find in Naija, Valentine’s still distant, but love flows through these narrow…
 ---
 *WordPress Prompt: What do you love about where you live?*
 

@@ -2,9 +2,6 @@
 title: Where do AI and creativity meet?
 date: 2024-12-13
 cover: /assets/blog/AI and creativity.jpg
-excerpt: Early this week, someone asked me the above question.My response? ‘In
-  the middle’. But later I thought, “Yikes! Do I really believe that?”Then
-  yesterday, I saw a 2023 Euronews interview with British-Indian sculptor Sir…
 ---
 Early this week, someone asked me the above question.  
 My response? ‘In the middle’. But later I thought, “Yikes! Do I really believe that?”  

@@ -2,9 +2,6 @@
 title: This is who I’m not
 date: 2024-08-03
 cover: /assets/blog/IMG_1633 (convert.io).png
-excerpt: I’m not boring; I prefer the indoors. I’m not snobbish; my mind seeks
-  more than what’s yours. I don’t dislike people; I keep to myself, not in
-  scores. I’m not quiet; I grasp the unspoken with no roars. I’m not…
 ---
 I’m not boring; I prefer the indoors  
 I’m not snobbish; my mind seeks more than what's yours  

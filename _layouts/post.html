@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title }} | Janie Ogeah</title>
-  {% assign summary = page.excerpt | strip_html | normalize_whitespace | truncate: 160 %}
+  {% assign paras = content | split: '</p>' %}{% assign lead = paras[0] | strip_html | strip %}{% if lead contains 'Prompt' %}{% assign body_text = content | remove_first: paras[0] %}{% else %}{% assign body_text = content %}{% endif %}
+  {% assign summary = page.summary | default: body_text | strip_html | normalize_whitespace | truncate: 160 %}
   <meta name="description" content="{{ summary | escape }}" />
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   <meta property="og:type" content="article" />

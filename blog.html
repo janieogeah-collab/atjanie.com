@@ -52,7 +52,8 @@ permalink: /blog.html
             <div class="post-card-body">
               <span class="slug">{{ post.date | date: "%-d %b %Y" }}</span>
               <h3>{{ post.title }}</h3>
-              <p>{{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 28 }}</p>
+              {% assign paras = post.content | split: '</p>' %}{% assign lead = paras[0] | strip_html | strip %}{% if lead contains 'Prompt' %}{% assign body_text = post.content | remove_first: paras[0] %}{% else %}{% assign body_text = post.content %}{% endif %}
+              <p>{{ post.summary | default: body_text | strip_html | normalize_whitespace | truncatewords: 28 }}</p>
             </div>
           </a>
           {% endfor %}

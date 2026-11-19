@@ -2,9 +2,6 @@
 title: "Leadership and Innovation: From screens to business scenes"
 date: 2020-06-13
 cover: /assets/blog/leadership-and-innovation-from-screens-to-business-scenes-cover.jpg
-excerpt: "Among the many movies and television shows that have tackled this
-  theme, one stands out markedly: Game of Thrones, a fantasy series by George
-  R.R. Martin, later adapted into a TV show."
 ---
 Books have been written, stories told, movies made, and pictures painted depicting the deteriorating state of leadership and poor managerial skills across various sectors. Despite these portrayals, the rift continues to widen, and many remain ensnared in poor leadership choices. Among the many movies and television shows that have tackled this theme, one stands out rather blatantly, *Game of Thrones*, a fantasy series by George R.R. Martin, later adapted into a TV show. From April 14th to 20th, 2019, search interest in Nigeria for ‘Game of Thrones’ on Google soared to 100 percent. While the HBO TV show captivated audiences with its compelling narrative, it also offers profound lessons on leadership and innovation that many seem to overlook.
 
