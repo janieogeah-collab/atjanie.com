@@ -1,5 +1,5 @@
 ---
-title: All the festivals rejected my film. Four of them were in Spain
+title: International submissions welcome, *terms and conditions apply
 date: 2026-11-20
 cover: /assets/blog/Film festival rejections.jpg
 excerpt: My last film, a 14-minute dramedy, went into twelve festivals. It
