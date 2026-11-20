@@ -68,10 +68,10 @@ The African Diaspora Cinema and AFRIFF appeared to be the most fitting of them f
 
 So, did ten rejections add up to a diagnosis, or is it the most informative signal there is about the film’s quality? I might as well be reading tea leaves made of silence. 
 
-But lessons learned. Now I know that festival run is a whole thing to be done with almost the same intentionality as production itself. 	 
-
 While 10 may seem like a large number, the reality check narrowed it down to 2, which then means that although it is not too early to start collecting evidence, it is certainly too hasty for me to name a cause for my rejections.  
 
-  
-  
-  
+If you're a budding filmmaker like me, learn from my mistakes. Give festival run the same intentionality as the production itself. Draw up a list of core festivals that would most likely give your film a fighting chance. Then add a couple of Academy-qualifying ones, but don't kid yourself into thinking they are anything but a reach; that manages your expectations. Thereafter, plan your film around these selected festivals in terms of their guidelines and whatnot. This is supposedly the job of the rules pages, but fuck that; they bask in deception, so check past programmes instead and count foreign titles. If not convinced, email the programmers (if an address is provided) before paying a dime.	 
+
+
+
+&nbsp;
