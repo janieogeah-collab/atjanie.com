@@ -6,7 +6,7 @@ excerpt: My last film, a 14-minute dramedy, went into twelve festivals. It
   received one selection by the April Fools Short Film Challenge with three
   nominations, returned ten rejections, and one remains under consideration.
 ---
-My last film, a 14-minute dramedy, went into twelve festivals. It received one selection by the April Fools Short Film Challenge with three nominations, returned ten rejections, and one remains under consideration.  
+My last film, a 14-minute dramedy, went into twelve festivals. It received one selection, ten rejections, and one is still under consideration. 
 
 For someone self-teaching and still pretty green behind the ears, I’ve mostly been fumbling my way around, watching and learning from the experienced but, more importantly, learning from my mistakes. Yes, mistakes are exactly what I’d call my festival run so far. 
 
@@ -44,7 +44,7 @@ This list includes both paid and free submissions; albeit ‘free’ on Festhome
 
 Why ten rejections?
 
-At first, I blamed the film, believing it wasn’t good enough. A part of me still does, perhaps the part that is yet to make something exceptionally beautiful that, every time I see it, I get orgasmic pleasure. 
+At first, I blamed the film, believing it wasn’t good enough. A part of me still believes that, perhaps, the part that is yet to make something exceptionally beautiful that, every time I see it, I get orgasmic pleasure. 
 
 But seriously, I may not know the whole shebang of how festivals work; I have, however, gained a decent amount of understanding that a rejection is the least informative signal there is about a film’s quality. 
 
