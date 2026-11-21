@@ -3,8 +3,7 @@ title: International submissions welcome*
 date: 2026-11-20
 cover: /assets/blog/Film festival rejections.jpg
 excerpt: My last film, a 14-minute dramedy, went into twelve festivals. It
-  received one selection by the April Fools Short Film Challenge with three
-  nominations, returned ten rejections, and one remains under consideration.
+  received one selection, ten rejections, and one is still under consideration.
 ---
 My last film, a 14-minute dramedy, went into twelve festivals. It received one selection, ten rejections, and one is still under consideration. 
 
