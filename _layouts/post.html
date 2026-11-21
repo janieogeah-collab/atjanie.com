@@ -11,7 +11,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ page.title | escape }}" />
   <meta property="og:description" content="{{ summary | escape }}" />
-  {% if page.cover %}<meta property="og:image" content="{{ site.url }}{{ page.cover }}" />{% endif %}
+  {% if page.cover %}<meta property="og:image" content="{{ site.url }}{{ page.cover | uri_escape }}" />{% endif %}
   <link rel="icon" href="/favicon.ico" sizes="48x48" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
@@ -22,12 +22,12 @@
 </head>
 <body>
   <nav class="nav" id="nav">
-    <a href="/index.html" class="nav-logo" aria-label="Janie Ogeah home"><img src="/atJanie_logo_tight.svg" alt="JO, Janie Ogeah" /></a>
+    <a href="/" class="nav-logo" aria-label="Janie Ogeah home"><img src="/atJanie_logo_tight.svg" alt="JO, Janie Ogeah" /></a>
     <ul class="nav-links">
-      <li><a href="/film.html">Films</a></li>
-      <li><a href="/portfolio.html">Work</a></li>
-      <li><a href="/about.html">Bio</a></li>
-      <li><a href="/blog.html" class="active">Words</a></li>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/bio/">Bio</a></li>
+      <li><a href="/words/" class="active">Words</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
@@ -37,8 +37,8 @@
     {% assign words = content | number_of_words %}
     {% assign minutes = words | divided_by: 200 | plus: 1 %}
     <header class="banner post-banner">
-      {% if page.cover %}<div class="bg" style="background-image:url('{{ page.cover }}');"></div>{% endif %}
-      <p class="slug"><a href="/blog.html#posts">Words</a> &middot; {{ page.date | date: "%-d %B %Y" }} &middot; <b>{{ minutes }} min read</b></p>
+      {% if page.cover %}<div class="bg" style="background-image:url('{{ page.cover | uri_escape }}');"></div>{% endif %}
+      <p class="slug"><a href="/words/#posts">Words</a> &middot; {{ page.date | date: "%-d %B %Y" }} &middot; <b>{{ minutes }} min read</b></p>
       <h1 class="post-title">{{ page.title }}</h1>
     </header>
 
@@ -139,10 +139,10 @@
   <footer>
     <p>&copy; 2026 Janie Ogeah &middot; <a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Lucidum Visions</a></p>
     <ul>
-      <li><a href="/film.html">Films</a></li>
-      <li><a href="/portfolio.html">Work</a></li>
-      <li><a href="/about.html">Bio</a></li>
-      <li><a href="/blog.html">Words</a></li>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/bio/">Bio</a></li>
+      <li><a href="/words/">Words</a></li>
       <li><a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
   </footer>

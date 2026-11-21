@@ -1,5 +1,6 @@
 ---
-permalink: /blog.html
+permalink: /words/
+redirect_from: /blog.html
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,18 +13,18 @@ permalink: /blog.html
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="motion.js" defer></script>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/motion.js" defer></script>
   <script data-goatcounter="https://atjanie.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
   <nav class="nav" id="nav">
-    <a href="index.html" class="nav-logo" aria-label="Janie Ogeah home"><img src="atJanie_logo_tight.svg" alt="JO, Janie Ogeah" /></a>
+    <a href="/" class="nav-logo" aria-label="Janie Ogeah home"><img src="/atJanie_logo_tight.svg" alt="JO, Janie Ogeah" /></a>
     <ul class="nav-links">
-      <li><a href="film.html">Films</a></li>
-      <li><a href="portfolio.html">Work</a></li>
-      <li><a href="about.html">Bio</a></li>
-      <li><a href="blog.html" class="active">Words</a></li>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/bio/">Bio</a></li>
+      <li><a href="/words/" class="active">Words</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
@@ -31,7 +32,7 @@ permalink: /blog.html
 
   <main>
     <header class="banner">
-      <div class="bg" style="background-image:url('photo-cave.jpg');"></div>
+      <div class="bg" style="background-image:url('/photo-cave.jpg');"></div>
       <h1 class="display">Words<span class="amber">.</span></h1>
       <p class="lede">Sometimes I shut my mouth and let my fingers do the talking.</p>
       <div class="btn-row" style="margin-top:2rem;">
@@ -47,7 +48,7 @@ permalink: /blog.html
         <div class="post-grid" data-reveal-kids>
           {% for post in site.posts %}
           <a class="post-card{% if forloop.first %} lead{% endif %}" href="{{ post.url }}">
-            <div class="img"{% if post.cover %} style="background-image:url('{{ post.cover }}');"{% endif %}></div>
+            <div class="img"{% if post.cover %} style="background-image:url('{{ post.cover | uri_escape }}');"{% endif %}></div>
             <div class="post-card-body">
               <span class="slug">{{ post.date | date: "%-d %b %Y" }}</span>
               <h3>{{ post.title }}</h3>
@@ -68,28 +69,28 @@ permalink: /blog.html
         </div>
         <div class="mosaic" data-reveal-kids>
           <a class="tile t1" href="#posts">
-            <div class="img" style="background-image:url('words-typewriter.jpg');"></div>
+            <div class="img" style="background-image:url('/words-typewriter.jpg');"></div>
             <span class="slug">Personal &middot; Opinion</span>
             <h3>Essays &amp; observations</h3>
             <p>Longer writing, cultural commentary and the occasional rant on creativity, film and making sense of the world.</p>
             <span class="go">Read the blog</span>
           </a>
           <a class="tile t2" href="https://gvsummitexpo.com/blog/" target="_blank" rel="noopener">
-            <div class="img" style="background-image:url('words-turbine.jpg');"></div>
+            <div class="img" style="background-image:url('/words-turbine.jpg');"></div>
             <span class="slug">Sustainability &middot; Events</span>
             <h3>Green Vision Summit: sustainability comms</h3>
             <p>Stakeholder communications and sustainability content reaching audiences on four continents.</p>
             <span class="go">Read at Green Vision</span>
           </a>
           <a class="tile t3" href="https://gsetechnologies.com/category/blog-posts/" target="_blank" rel="noopener">
-            <div class="img" style="background-image:url('words-solar.jpg');"></div>
+            <div class="img" style="background-image:url('/words-solar.jpg');"></div>
             <span class="slug">Technology &middot; B2B</span>
             <h3>GSE Technologies: brand &amp; content</h3>
             <p>Articles, web copy and campaign content for a technology solutions company building authority in a competitive market.</p>
             <span class="go">Read at GSE</span>
           </a>
           <a class="tile t4" href="https://www.researchgate.net/publication/396034467_An_Assessment_of_the_Current_State_of_Creativity_and_Innovation_Within_Solartonic" target="_blank" rel="noopener">
-            <div class="img" style="background-image:url('words-library.jpg');"></div>
+            <div class="img" style="background-image:url('/words-library.jpg');"></div>
             <span class="slug">Academic</span>
             <h3>Creativity &amp; innovation within Solartonic</h3>
             <p>Desk research assessing the current state of creativity and innovation within Solartonic.</p>
@@ -100,7 +101,7 @@ permalink: /blog.html
     </section>
 
     <div class="photo-band quote-only">
-      <div class="bg" style="background-image:url('photo-mountain.jpg');"></div>
+      <div class="bg" style="background-image:url('/photo-mountain.jpg');"></div>
       <p class="line" data-reveal>Sometimes the most strategic thing <span class="amber">is writing the truth, and nothing but the truth.</span></p>
     </div>
 
@@ -115,10 +116,10 @@ permalink: /blog.html
   <footer>
     <p>&copy; 2026 Janie Ogeah &middot; <a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Lucidum Visions</a></p>
     <ul>
-      <li><a href="film.html">Films</a></li>
-      <li><a href="portfolio.html">Work</a></li>
-      <li><a href="about.html">Bio</a></li>
-      <li><a href="blog.html">Words</a></li>
+      <li><a href="/films/">Films</a></li>
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/bio/">Bio</a></li>
+      <li><a href="/words/">Words</a></li>
       <li><a href="https://www.instagram.com/lucidumvisions/" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
   </footer>
