@@ -1,5 +1,5 @@
 ---
-title: International submissions welcome, *terms and conditions apply
+title: International submissions welcome*
 date: 2026-11-20
 cover: /assets/blog/Film festival rejections.jpg
 excerpt: My last film, a 14-minute dramedy, went into twelve festivals. It
