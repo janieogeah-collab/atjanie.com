@@ -11,31 +11,17 @@ For someone self-teaching and still pretty green behind the ears, I’ve mostly 
 
 Before we get into that, the said film was submitted to the following festivals:
 
-
-
-April Fools Short Film Challenge
-
-Tehran International Short Film Festival
-
-The 9th Jeonju International Short Film Festival
-
-Festival Internacional de Cortometrajes del Geoparque de Granada - Cortos En Cortes
-
-Festival Internacional De Cine De Montanejos
-
-Cortesina Festival de Cortometrajes
-
-Cinemana Mare Nostrum
-
-Zero To Hero Short Film Festival
-
-African Diaspora Cinema Festival
-
-AFRIFF
-
-Barcelona Indie Filmmakers Festival • BARCIFF
-
-
+- April Fools Short Film Challenge
+- Tehran International Short Film Festival
+- The 9th Jeonju International Short Film Festival
+- Festival Internacional de Cortometrajes del Geoparque de Granada - Cortos En Cortes
+- Festival Internacional De Cine De Montanejos
+- Cortesina Festival de Cortometrajes
+- Cinemana Mare Nostrum
+- Zero To Hero Short Film Festival
+- African Diaspora Cinema Festival
+- AFRIFF
+- Barcelona Indie Filmmakers Festival • BARCIFF
 
 Plus the one still under consideration that I’d be leaving out of the list for now.
 
