@@ -25,10 +25,19 @@ content:
         label: Cover image
         type: image
         description: Shows at the top of the post and on the Words page. Landscape works best.
-      - name: excerpt
-        label: Short summary
+      - name: summary
+        label: Custom preview text (optional)
         type: text
-        description: One or two sentences for the Words page and for search results.
+        description: Leave empty and previews use the opening of the post automatically. Fill it only to override.
+      - name: slug
+        label: Web address (optional)
+        type: string
+        description: The end of the post's link, e.g. international-submissions-welcome gives atjanie.com/words/international-submissions-welcome/. Lowercase words joined by hyphens. Leave empty to use the first title.
+      - name: redirect_from
+        label: Old web addresses (optional)
+        type: string
+        list: true
+        description: If you change the web address of a post people have already shared, add the old address here, e.g. /words/old-address/, so old links still work.
       - name: body
         label: Post
         type: rich-text
